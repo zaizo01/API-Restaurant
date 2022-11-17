@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "LwWegHVkyqxHXxl/I9gkuLi4OU9IR8FKeKTWDCzIMVo=",
+  "Source": "StockApp.WebApi",
+  "BasePath": "_content/StockApp.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
