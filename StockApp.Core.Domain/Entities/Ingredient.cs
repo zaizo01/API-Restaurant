@@ -10,7 +10,5 @@ namespace StockApp.Core.Domain.Entities
     public class Ingredient: AuditableBaseEntity
     {
         public string Name { get; set; }
-        public int DishId { get; set; }
-        public Dish Dish { get; set; }
     }
 }

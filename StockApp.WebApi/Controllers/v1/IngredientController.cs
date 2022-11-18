@@ -5,7 +5,7 @@ using StockApp.Core.Application.ViewModels.Ingredients;
 
 namespace StockApp.WebApi.Controllers.v1
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class IngredientController : ControllerBase
     {
@@ -52,7 +52,7 @@ namespace StockApp.WebApi.Controllers.v1
 
                 if (Ingredient == null)
                 {
-                    return NotFound();
+                    return NotFound("No existe este ingrediente.");
                 }
 
                 return Ok(Ingredient);

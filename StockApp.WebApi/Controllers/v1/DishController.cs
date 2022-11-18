@@ -5,7 +5,7 @@ using StockApp.Core.Application.ViewModels.Dishes;
 
 namespace StockApp.WebApi.Controllers.v1
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class DishController : ControllerBase
     {

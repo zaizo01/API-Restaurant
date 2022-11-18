@@ -1,4 +1,5 @@
-﻿using StockApp.Core.Domain.Entities;
+﻿using StockApp.Core.Application.ViewModels.Dishes;
+using StockApp.Core.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +10,6 @@ namespace StockApp.Core.Application.Interfaces.Repositories
 {
     public interface IDishRepository : IGenericRepository<Dish>
     {
+        
     }
 }

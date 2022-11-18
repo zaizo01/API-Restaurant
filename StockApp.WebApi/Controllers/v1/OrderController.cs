@@ -5,7 +5,7 @@ using StockApp.Core.Application.ViewModels.Orders;
 
 namespace StockApp.WebApi.Controllers.v1
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class OrderController : ControllerBase
     {

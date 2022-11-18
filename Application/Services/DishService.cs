@@ -15,6 +15,7 @@ namespace StockApp.Core.Application.Services
     {
         public DishService(IGenericRepository<Dish> repository, IMapper mapper) : base(repository, mapper)
         {
+      
         }
     }
 }

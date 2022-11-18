@@ -5,7 +5,7 @@ using StockApp.Core.Application.ViewModels.Tables;
 
 namespace StockApp.WebApi.Controllers.v1
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class TableController : ControllerBase
     {

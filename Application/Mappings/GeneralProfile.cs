@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using StockApp.Core.Application.Dtos.Account;
 using StockApp.Core.Application.ViewModels.Categories;
+using StockApp.Core.Application.ViewModels.Dishes;
 using StockApp.Core.Application.ViewModels.Ingredients;
 using StockApp.Core.Application.ViewModels.Products;
 using StockApp.Core.Application.ViewModels.Tables;
@@ -58,6 +59,33 @@ namespace StockApp.Core.Application.Mappings
              .ForMember(x => x.CreatedBy, opt => opt.Ignore())
              .ForMember(x => x.LastModified, opt => opt.Ignore())
              .ForMember(x => x.LastModifiedBy, opt => opt.Ignore());
+
+            CreateMap<Ingredient, IngredientViewModel>()
+             .ReverseMap()
+             .ForMember(x => x.Created, opt => opt.Ignore())
+             .ForMember(x => x.CreatedBy, opt => opt.Ignore())
+             .ForMember(x => x.LastModified, opt => opt.Ignore())
+             .ForMember(x => x.LastModifiedBy, opt => opt.Ignore());
+
+            #region DishProfile
+
+            CreateMap<Dish, DishViewModel>()
+              .ReverseMap()
+              .ForMember(x => x.Created, opt => opt.Ignore())
+              .ForMember(x => x.CreatedBy, opt => opt.Ignore())
+              .ForMember(x => x.LastModified, opt => opt.Ignore())
+              .ForMember(x => x.LastModifiedBy, opt => opt.Ignore());
+
+            CreateMap<Dish, SaveDishViewModel>()
+                .ReverseMap()
+                .ForMember(ent => ent.Ingredients,
+                    dto => dto.MapFrom(campo => campo.Ingredients.Select(id => new Ingredient() { Id = id })))
+                .ForMember(x => x.Created, opt => opt.Ignore())
+                .ForMember(x => x.CreatedBy, opt => opt.Ignore())
+                .ForMember(x => x.LastModified, opt => opt.Ignore())
+                .ForMember(x => x.LastModifiedBy, opt => opt.Ignore());
+
+            #endregion
 
             #region CategoryProfile
             CreateMap<Category, CategoryViewModel>()
