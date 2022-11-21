@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using StockApp.Infrastucture.Persistence.Repositories;
 
 namespace StockApp.Infrastructure.Persistence
 {
@@ -35,6 +36,8 @@ namespace StockApp.Infrastructure.Persistence
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddTransient<IProductRepository, ProductRepository>();
             services.AddTransient<ICategoryRepository, CategoryRepository>();  
+            services.AddTransient<IDishRepository, DishRepository>();  
+            services.AddTransient<IDishIngredientRepository, DishIngredientRepository>();  
             #endregion
         }
     }

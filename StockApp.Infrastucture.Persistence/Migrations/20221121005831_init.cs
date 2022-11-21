@@ -28,6 +28,23 @@ namespace StockApp.Infrastucture.Persistence.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Ingredients",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Created = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    LastModifiedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    LastModified = table.Column<DateTime>(type: "datetime2", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Ingredients", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Tables",
                 columns: table => new
                 {
@@ -126,13 +143,13 @@ namespace StockApp.Infrastucture.Persistence.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Ingredients",
+                name: "DishIngredient",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DishId = table.Column<int>(type: "int", nullable: true),
+                    DishId = table.Column<int>(type: "int", nullable: false),
+                    IngredientId = table.Column<int>(type: "int", nullable: false),
                     CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Created = table.Column<DateTime>(type: "datetime2", nullable: true),
                     LastModifiedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -140,13 +157,30 @@ namespace StockApp.Infrastucture.Persistence.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Ingredients", x => x.Id);
+                    table.PrimaryKey("PK_DishIngredient", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Ingredients_Dishs_DishId",
+                        name: "FK_DishIngredient_Dishs_DishId",
                         column: x => x.DishId,
                         principalTable: "Dishs",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_DishIngredient_Ingredients_IngredientId",
+                        column: x => x.IngredientId,
+                        principalTable: "Ingredients",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_DishIngredient_DishId",
+                table: "DishIngredient",
+                column: "DishId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_DishIngredient_IngredientId",
+                table: "DishIngredient",
+                column: "IngredientId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Dishs_OrderId",
@@ -154,15 +188,9 @@ namespace StockApp.Infrastucture.Persistence.Migrations
                 column: "OrderId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Ingredients_DishId",
-                table: "Ingredients",
-                column: "DishId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Orders_TableId",
                 table: "Orders",
-                column: "TableId",
-                unique: true);
+                column: "TableId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Products_CategoryId",
@@ -173,13 +201,16 @@ namespace StockApp.Infrastucture.Persistence.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Ingredients");
+                name: "DishIngredient");
 
             migrationBuilder.DropTable(
                 name: "Products");
 
             migrationBuilder.DropTable(
                 name: "Dishs");
+
+            migrationBuilder.DropTable(
+                name: "Ingredients");
 
             migrationBuilder.DropTable(
                 name: "Categories");

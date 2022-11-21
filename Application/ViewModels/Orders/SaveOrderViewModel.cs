@@ -1,4 +1,5 @@
-﻿using StockApp.Core.Domain.Entities;
+﻿using StockApp.Core.Application.ViewModels.Dishes;
+using StockApp.Core.Domain.Entities;
 using StockApp.Core.Domain.Enums;
 using System;
 using System.Collections.Generic;
@@ -16,7 +17,7 @@ namespace StockApp.Core.Application.ViewModels.Orders
         public int TableId { get; set; }
         public Table Table { get; set; }
         [Required(ErrorMessage = "Debe contener platos la orden")]
-        public ICollection<Dish> Dishes { get; set; }
+        public ICollection<SaveDishViewModel> Dishes { get; set; }
         public decimal Subtotal { get; set; }
         public OrderStatus OrderStatus { get; set; }
     }

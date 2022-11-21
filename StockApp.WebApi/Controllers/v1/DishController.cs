@@ -11,25 +11,29 @@ namespace StockApp.WebApi.Controllers.v1
     {
 
         private readonly IDishService _DishService;
+        private readonly IIngredientService _IngredientService;
 
-        public DishController(IDishService DishService)
+        public DishController(IDishService DishService, IIngredientService ingredientService)
         {
             _DishService = DishService;
+            _IngredientService = ingredientService;
         }
+
+      
 
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(DishViewModel))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> List()
         {
             try
             {
-                var dishes = await _DishService.GetAllViewModel();
+                var dishes = await _DishService.GetAllViewModelWithInclude();
 
                 if (dishes == null || dishes.Count == 0)
                 {
-                    return NotFound();
+                    return NotFound("No existen platos.");
                 }
 
                 return Ok(dishes);
@@ -39,20 +43,21 @@ namespace StockApp.WebApi.Controllers.v1
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
-
+        
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(SaveDishViewModel))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Get(int id)
+        public async Task<IActionResult> GetById(int id)
         {
             try
             {
-                var Dish = await _DishService.GetByIdSaveViewModel(id);
+                var dishList = await _DishService.GetAllViewModelWithInclude();
+                var Dish = dishList.FirstOrDefault(d => d.Id == id);
 
                 if (Dish == null)
                 {
-                    return NotFound();
+                    return NotFound("No existe el plato.");
                 }
 
                 return Ok(Dish);
@@ -67,7 +72,7 @@ namespace StockApp.WebApi.Controllers.v1
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Post(SaveDishViewModel vm)
+        public async Task<IActionResult> Create(SaveDishViewModel vm)
         {
             try
             {
@@ -76,7 +81,15 @@ namespace StockApp.WebApi.Controllers.v1
                     return BadRequest();
                 }
 
-                await _DishService.Add(vm);
+                foreach (var ingredientId in vm.Ingredients)
+                {
+                    var ingredient = _IngredientService.GetByIdSaveViewModel(ingredientId);
+                    if (ingredient is null) return NotFound("El ingrediente engresado no ha sido encontrado.");
+                }
+
+                var dish = await _DishService.Add(vm);
+                if (vm.Ingredients.Count() == 0) return BadRequest("Es neceario indicar los ingredientes del plato.");
+                else await _DishService.AddIngredients(dish.Id, vm.Ingredients);
                 return NoContent();
             }
             catch (Exception ex)
@@ -85,12 +98,12 @@ namespace StockApp.WebApi.Controllers.v1
             }
         }
 
-
+      
         [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(SaveDishViewModel))]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Put(int id, SaveDishViewModel vm)
+        public async Task<IActionResult> Update(int id, SaveDishViewModel vm)
         {
             try
             {
@@ -101,22 +114,6 @@ namespace StockApp.WebApi.Controllers.v1
 
                 await _DishService.Update(vm, id);
                 return Ok(vm);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
-            }
-        }
-
-        [HttpDelete("{id}")]
-        [ProducesResponseType(StatusCodes.Status204NoContent)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Delete(int id)
-        {
-            try
-            {
-                await _DishService.Delete(id);
-                return NoContent();
             }
             catch (Exception ex)
             {

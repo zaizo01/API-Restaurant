@@ -21,7 +21,7 @@ namespace StockApp.WebApi.Controllers.v1
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(OrderViewModel))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> List()
         {
             try
             {
@@ -29,7 +29,7 @@ namespace StockApp.WebApi.Controllers.v1
 
                 if (Orders == null || Orders.Count == 0)
                 {
-                    return NotFound();
+                    return NotFound("No existen ordenes.");
                 }
 
                 return Ok(Orders);
@@ -44,7 +44,7 @@ namespace StockApp.WebApi.Controllers.v1
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(SaveOrderViewModel))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Get(int id)
+        public async Task<IActionResult> GetById(int id)
         {
             try
             {
@@ -52,7 +52,7 @@ namespace StockApp.WebApi.Controllers.v1
 
                 if (Order == null)
                 {
-                    return NotFound();
+                    return NotFound("No existe la orden.");
                 }
 
                 return Ok(Order);
@@ -67,7 +67,7 @@ namespace StockApp.WebApi.Controllers.v1
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Post(SaveOrderViewModel vm)
+        public async Task<IActionResult> Create(SaveOrderViewModel vm)
         {
             try
             {
@@ -90,7 +90,7 @@ namespace StockApp.WebApi.Controllers.v1
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(SaveOrderViewModel))]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Put(int id, SaveOrderViewModel vm)
+        public async Task<IActionResult> Update(int id, SaveOrderViewModel vm)
         {
             try
             {

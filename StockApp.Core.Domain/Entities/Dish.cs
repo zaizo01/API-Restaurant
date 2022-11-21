@@ -14,6 +14,6 @@ namespace StockApp.Core.Domain.Entities
         public decimal Price { get; set; }
         public int DishCapacity { get; set; }
         public CategoryDish Category { get; set; }
-        public ICollection<Ingredient> Ingredients { get; set; }
+        public ICollection<DishIngredient> Ingredients { get; set; }
     }
 }

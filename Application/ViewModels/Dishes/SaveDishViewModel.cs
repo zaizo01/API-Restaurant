@@ -1,4 +1,5 @@
-﻿using StockApp.Core.Domain.Entities;
+﻿using StockApp.Core.Application.ViewModels.Ingredients;
+using StockApp.Core.Domain.Entities;
 using StockApp.Core.Domain.Enums;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,6 @@ namespace StockApp.Core.Application.ViewModels.Dishes
         [Required(ErrorMessage = "La categoria del plato es requerida")]
         public CategoryDish Category { get; set; }
         [Required(ErrorMessage = "Los ingredientes del plato son requeridos")]
-        public ICollection<int> Ingredients { get; set; }
+        public List<int> Ingredients { get; set; }
     }
 }

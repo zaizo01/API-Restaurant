@@ -12,7 +12,7 @@ using StockApp.Infrastructure.Persistence.Contexts;
 namespace StockApp.Infrastructure.Identity.Migrations
 {
     [DbContext(typeof(IdentityContext))]
-    [Migration("20221118004855_init")]
+    [Migration("20221121010012_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

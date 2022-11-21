@@ -1,4 +1,5 @@
-﻿using StockApp.Core.Domain.Entities;
+﻿using StockApp.Core.Application.ViewModels.Ingredients;
+using StockApp.Core.Domain.Entities;
 using StockApp.Core.Domain.Enums;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,6 @@ namespace StockApp.Core.Application.ViewModels.Dishes
         public decimal Price { get; set; }
         public int DishCapacity { get; set; }
         public CategoryDish Category { get; set; }
-        public ICollection<Ingredient> Ingredients { get; set; }
+        public ICollection<IngredientViewModel> Ingredients { get; set; }
     }
 }

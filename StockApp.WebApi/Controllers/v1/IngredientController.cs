@@ -21,7 +21,7 @@ namespace StockApp.WebApi.Controllers.v1
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IngredientViewModel))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> List()
         {
             try
             {
@@ -29,7 +29,7 @@ namespace StockApp.WebApi.Controllers.v1
 
                 if (Ingredientes == null || Ingredientes.Count == 0)
                 {
-                    return NotFound("No existen registros.");
+                    return NotFound("No existen ingredientes.");
                 }
 
                 return Ok(Ingredientes);
@@ -44,7 +44,7 @@ namespace StockApp.WebApi.Controllers.v1
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(SaveIngredientViewModel))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Get(int id)
+        public async Task<IActionResult> GetById(int id)
         {
             try
             {
@@ -67,7 +67,7 @@ namespace StockApp.WebApi.Controllers.v1
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Post(SaveIngredientViewModel vm)
+        public async Task<IActionResult> Create(SaveIngredientViewModel vm)
         {
             try
             {
@@ -90,7 +90,7 @@ namespace StockApp.WebApi.Controllers.v1
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(SaveIngredientViewModel))]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Put(int id, SaveIngredientViewModel vm)
+        public async Task<IActionResult> Update(int id, SaveIngredientViewModel vm)
         {
             try
             {
@@ -101,22 +101,6 @@ namespace StockApp.WebApi.Controllers.v1
 
                 await _IngredientService.Update(vm, id);
                 return Ok(vm);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
-            }
-        }
-
-        [HttpDelete("{id}")]
-        [ProducesResponseType(StatusCodes.Status204NoContent)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Delete(int id)
-        {
-            try
-            {
-                await _IngredientService.Delete(id);
-                return NoContent();
             }
             catch (Exception ex)
             {

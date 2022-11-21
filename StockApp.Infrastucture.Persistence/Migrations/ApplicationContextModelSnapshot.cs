@@ -99,6 +99,41 @@ namespace StockApp.Infrastucture.Persistence.Migrations
                     b.ToTable("Dishs");
                 });
 
+            modelBuilder.Entity("StockApp.Core.Domain.Entities.DishIngredient", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime?>("Created")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("DishId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IngredientId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("LastModified")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("LastModifiedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DishId");
+
+                    b.HasIndex("IngredientId");
+
+                    b.ToTable("DishIngredient");
+                });
+
             modelBuilder.Entity("StockApp.Core.Domain.Entities.Ingredient", b =>
                 {
                     b.Property<int>("Id")
@@ -113,9 +148,6 @@ namespace StockApp.Infrastucture.Persistence.Migrations
                     b.Property<string>("CreatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("DishId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime?>("LastModified")
                         .HasColumnType("datetime2");
 
@@ -127,8 +159,6 @@ namespace StockApp.Infrastucture.Persistence.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("DishId");
 
                     b.ToTable("Ingredients");
                 });
@@ -164,8 +194,7 @@ namespace StockApp.Infrastucture.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("TableId")
-                        .IsUnique();
+                    b.HasIndex("TableId");
 
                     b.ToTable("Orders");
                 });
@@ -261,20 +290,34 @@ namespace StockApp.Infrastucture.Persistence.Migrations
                         .HasForeignKey("OrderId");
                 });
 
-            modelBuilder.Entity("StockApp.Core.Domain.Entities.Ingredient", b =>
+            modelBuilder.Entity("StockApp.Core.Domain.Entities.DishIngredient", b =>
                 {
-                    b.HasOne("StockApp.Core.Domain.Entities.Dish", null)
+                    b.HasOne("StockApp.Core.Domain.Entities.Dish", "Plate")
                         .WithMany("Ingredients")
-                        .HasForeignKey("DishId");
+                        .HasForeignKey("DishId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("StockApp.Core.Domain.Entities.Ingredient", "Ingredient")
+                        .WithMany("Dishes")
+                        .HasForeignKey("IngredientId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Ingredient");
+
+                    b.Navigation("Plate");
                 });
 
             modelBuilder.Entity("StockApp.Core.Domain.Entities.Order", b =>
                 {
-                    b.HasOne("StockApp.Core.Domain.Entities.Table", null)
-                        .WithOne("Order")
-                        .HasForeignKey("StockApp.Core.Domain.Entities.Order", "TableId")
+                    b.HasOne("StockApp.Core.Domain.Entities.Table", "Table")
+                        .WithMany()
+                        .HasForeignKey("TableId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Table");
                 });
 
             modelBuilder.Entity("StockApp.Core.Domain.Entities.Product", b =>
@@ -298,15 +341,14 @@ namespace StockApp.Infrastucture.Persistence.Migrations
                     b.Navigation("Ingredients");
                 });
 
-            modelBuilder.Entity("StockApp.Core.Domain.Entities.Order", b =>
+            modelBuilder.Entity("StockApp.Core.Domain.Entities.Ingredient", b =>
                 {
                     b.Navigation("Dishes");
                 });
 
-            modelBuilder.Entity("StockApp.Core.Domain.Entities.Table", b =>
+            modelBuilder.Entity("StockApp.Core.Domain.Entities.Order", b =>
                 {
-                    b.Navigation("Order")
-                        .IsRequired();
+                    b.Navigation("Dishes");
                 });
 #pragma warning restore 612, 618
         }

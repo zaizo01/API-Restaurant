@@ -52,7 +52,7 @@ namespace StockApp.WebApi.Controllers.v1
 
                 if (Table == null)
                 {
-                    return NotFound("No existe la mesa");
+                    return NotFound("No existe la mesa.");
                 }
 
                 return Ok(Table);
@@ -85,6 +85,7 @@ namespace StockApp.WebApi.Controllers.v1
             }
         }
 
+        // falta este
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -107,6 +108,7 @@ namespace StockApp.WebApi.Controllers.v1
             }
         }
 
+        // falta este
         [HttpPut]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -145,22 +147,6 @@ namespace StockApp.WebApi.Controllers.v1
 
                 await _TableService.Update(vm, id);
                 return Ok(vm);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
-            }
-        }
-
-        [HttpDelete("{id}")]
-        [ProducesResponseType(StatusCodes.Status204NoContent)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Delete(int id)
-        {
-            try
-            {
-                await _TableService.Delete(id);
-                return NoContent();
             }
             catch (Exception ex)
             {
