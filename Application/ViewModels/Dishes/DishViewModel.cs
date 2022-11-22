@@ -16,6 +16,6 @@ namespace StockApp.Core.Application.ViewModels.Dishes
         public decimal Price { get; set; }
         public int DishCapacity { get; set; }
         public CategoryDish Category { get; set; }
-        public ICollection<IngredientViewModel> Ingredients { get; set; }
+        public virtual ICollection<IngredientViewModel> Ingredients { get; set; }
     }
 }

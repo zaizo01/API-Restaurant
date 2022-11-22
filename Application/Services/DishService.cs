@@ -17,13 +17,15 @@ namespace StockApp.Core.Application.Services
     {
         private readonly IMapper mapper;
         private readonly IDishRepository _dishRepository;
+        private readonly IDishIngredientRepository _dishIngredientRepository;
         private readonly IDishIngredientService _dishIngredientService;
 
-        public DishService(IGenericRepository<Dish> repository, IMapper mapper, IDishRepository DishRepository, IDishIngredientService dishIngredientService) : base(repository, mapper)
+        public DishService(IGenericRepository<Dish> repository, IMapper mapper, IDishIngredientRepository dishIngredientRepository, IDishRepository DishRepository, IDishIngredientService dishIngredientService) : base(repository, mapper)
         {
             this.mapper = mapper;
             _dishRepository = DishRepository;
             _dishIngredientService = dishIngredientService;
+            _dishIngredientRepository = dishIngredientRepository;
         }
 
         public async Task AddIngredients(int id, List<int> ingredients)
@@ -44,8 +46,7 @@ namespace StockApp.Core.Application.Services
         public async Task<List<DishViewModel>> GetAllViewModelWithInclude()
         {
             var dishList = await _dishRepository.GetAllWithIncludeAsync(new List<string> { "Ingredients" });
-          
- 
+
             return dishList.Select(dish => new DishViewModel
             {
                 Id = dish.Id,
@@ -53,25 +54,12 @@ namespace StockApp.Core.Application.Services
                 DishCapacity = dish.DishCapacity,
                 Price = dish.Price,
                 Category = dish.Category,
-                Ingredients = dish.Ingredients.Select(x => new IngredientViewModel()
+                Ingredients = dish.Ingredients.Select(ig => new IngredientViewModel()
                 {
-                    Id = x.Id,
-                    Name = x.Name
+                    Id = ig.Id,
+                    Name = ig.Name
                 }).ToList()
-                
-                //dish.DishIngredients.Where(x => x.DishId == dish.Id).Select(ig => new IngredientViewModel()
-                //{
-                //    Id = ig.Ingredient.Id,
-                //    Name = ig.Ingredient.Name
-                //}).ToList()
-
             }).ToList();
-
-            //Select(ing => new IngredientViewModel
-            //{
-            //    Id = ing.Ingredient.Id,
-            //    Name = ing.Ingredient.Name
-            //}).ToList()
         }
     }
 }

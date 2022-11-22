@@ -12,7 +12,7 @@ using StockApp.Infrastructure.Persistence.Contexts;
 namespace StockApp.Infrastucture.Persistence.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20221121213253_init")]
+    [Migration("20221122163259_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -113,7 +113,7 @@ namespace StockApp.Infrastucture.Persistence.Migrations
 
                     b.HasIndex("IngredientId");
 
-                    b.ToTable("DishIngredients");
+                    b.ToTable("DishIngredient");
                 });
 
             modelBuilder.Entity("StockApp.Core.Domain.Entities.Ingredient", b =>
@@ -130,6 +130,9 @@ namespace StockApp.Infrastucture.Persistence.Migrations
                     b.Property<string>("CreatedBy")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("DishId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime?>("LastModified")
                         .HasColumnType("datetime2");
 
@@ -141,6 +144,8 @@ namespace StockApp.Infrastucture.Persistence.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("DishId");
 
                     b.ToTable("Ingredients");
                 });
@@ -275,13 +280,13 @@ namespace StockApp.Infrastucture.Persistence.Migrations
             modelBuilder.Entity("StockApp.Core.Domain.Entities.DishIngredient", b =>
                 {
                     b.HasOne("StockApp.Core.Domain.Entities.Dish", "Dish")
-                        .WithMany("DishIngredients")
+                        .WithMany()
                         .HasForeignKey("DishId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("StockApp.Core.Domain.Entities.Ingredient", "Ingredient")
-                        .WithMany("DishIngredients")
+                        .WithMany()
                         .HasForeignKey("IngredientId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -289,6 +294,13 @@ namespace StockApp.Infrastucture.Persistence.Migrations
                     b.Navigation("Dish");
 
                     b.Navigation("Ingredient");
+                });
+
+            modelBuilder.Entity("StockApp.Core.Domain.Entities.Ingredient", b =>
+                {
+                    b.HasOne("StockApp.Core.Domain.Entities.Dish", null)
+                        .WithMany("Ingredients")
+                        .HasForeignKey("DishId");
                 });
 
             modelBuilder.Entity("StockApp.Core.Domain.Entities.Order", b =>
@@ -320,12 +332,7 @@ namespace StockApp.Infrastucture.Persistence.Migrations
 
             modelBuilder.Entity("StockApp.Core.Domain.Entities.Dish", b =>
                 {
-                    b.Navigation("DishIngredients");
-                });
-
-            modelBuilder.Entity("StockApp.Core.Domain.Entities.Ingredient", b =>
-                {
-                    b.Navigation("DishIngredients");
+                    b.Navigation("Ingredients");
                 });
 
             modelBuilder.Entity("StockApp.Core.Domain.Entities.Order", b =>

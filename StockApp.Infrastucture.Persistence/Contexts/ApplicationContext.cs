@@ -20,7 +20,7 @@ namespace StockApp.Infrastructure.Persistence.Contexts
         public DbSet<Table> Tables { get; set; }   
         public DbSet<Dish> Dishs { get; set; }   
         public DbSet<Ingredient> Ingredients { get; set; }
-        public DbSet<DishIngredient> DishIngredients { get; set; }
+        //public DbSet<DishIngredient> DishIngredients { get; set; }
       
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())

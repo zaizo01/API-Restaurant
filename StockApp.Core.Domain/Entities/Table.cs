@@ -13,5 +13,6 @@ namespace StockApp.Core.Domain.Entities
         public int Capacity { get; set; }
         public string Description { get; set; }
         public TableStatus TableStatus { get; set; }
+        public ICollection<Order> Orders { get; set; }
     }
 }

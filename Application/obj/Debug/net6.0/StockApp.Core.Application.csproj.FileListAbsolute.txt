@@ -73,3 +73,18 @@ C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\Application\o
 C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\Application\obj\Debug\net6.0\refint\StockApp.Core.Application.dll
 C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\Application\obj\Debug\net6.0\StockApp.Core.Application.pdb
 C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\Application\obj\Debug\net6.0\ref\StockApp.Core.Application.dll
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\Application\bin\Debug\net6.0\StockApp.Core.Application.deps.json
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\Application\bin\Debug\net6.0\StockApp.Core.Application.dll
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\Application\bin\Debug\net6.0\StockApp.Core.Application.pdb
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\Application\bin\Debug\net6.0\StockApp.Core.Domain.dll
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\Application\bin\Debug\net6.0\StockApp.Core.Domain.pdb
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\Application\obj\Debug\net6.0\StockApp.Core.Application.csproj.AssemblyReference.cache
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\Application\obj\Debug\net6.0\StockApp.Core.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\Application\obj\Debug\net6.0\StockApp.Core.Application.AssemblyInfoInputs.cache
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\Application\obj\Debug\net6.0\StockApp.Core.Application.AssemblyInfo.cs
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\Application\obj\Debug\net6.0\StockApp.Core.Application.csproj.CoreCompileInputs.cache
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\Application\obj\Debug\net6.0\StockApp.Core.Application.csproj.CopyComplete
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\Application\obj\Debug\net6.0\StockApp.Core.Application.dll
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\Application\obj\Debug\net6.0\refint\StockApp.Core.Application.dll
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\Application\obj\Debug\net6.0\StockApp.Core.Application.pdb
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\Application\obj\Debug\net6.0\ref\StockApp.Core.Application.dll

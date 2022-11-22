@@ -49,3 +49,20 @@ C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infr
 C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Shared\obj\Debug\net6.0\refint\StockApp.Infrastructure.Shared.dll
 C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Shared\obj\Debug\net6.0\StockApp.Infrastructure.Shared.pdb
 C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Shared\obj\Debug\net6.0\ref\StockApp.Infrastructure.Shared.dll
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Infrastructure.Shared\bin\Debug\net6.0\StockApp.Infrastructure.Shared.deps.json
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Infrastructure.Shared\bin\Debug\net6.0\StockApp.Infrastructure.Shared.dll
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Infrastructure.Shared\bin\Debug\net6.0\StockApp.Infrastructure.Shared.pdb
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Infrastructure.Shared\bin\Debug\net6.0\StockApp.Core.Application.dll
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Infrastructure.Shared\bin\Debug\net6.0\StockApp.Core.Domain.dll
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Infrastructure.Shared\bin\Debug\net6.0\StockApp.Core.Application.pdb
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Infrastructure.Shared\bin\Debug\net6.0\StockApp.Core.Domain.pdb
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Infrastructure.Shared\obj\Debug\net6.0\StockApp.Infrastructure.Shared.csproj.AssemblyReference.cache
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Infrastructure.Shared\obj\Debug\net6.0\StockApp.Infrastructure.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Infrastructure.Shared\obj\Debug\net6.0\StockApp.Infrastructure.Shared.AssemblyInfoInputs.cache
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Infrastructure.Shared\obj\Debug\net6.0\StockApp.Infrastructure.Shared.AssemblyInfo.cs
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Infrastructure.Shared\obj\Debug\net6.0\StockApp.Infrastructure.Shared.csproj.CoreCompileInputs.cache
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Infrastructure.Shared\obj\Debug\net6.0\StockApp.Infrastructure.Shared.csproj.CopyComplete
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Infrastructure.Shared\obj\Debug\net6.0\StockApp.Infrastructure.Shared.dll
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Infrastructure.Shared\obj\Debug\net6.0\refint\StockApp.Infrastructure.Shared.dll
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Infrastructure.Shared\obj\Debug\net6.0\StockApp.Infrastructure.Shared.pdb
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Infrastructure.Shared\obj\Debug\net6.0\ref\StockApp.Infrastructure.Shared.dll

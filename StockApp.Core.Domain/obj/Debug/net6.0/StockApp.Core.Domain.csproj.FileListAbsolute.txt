@@ -58,3 +58,15 @@ C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Core
 C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Core.Domain\obj\Debug\net6.0\refint\StockApp.Core.Domain.dll
 C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Core.Domain\obj\Debug\net6.0\StockApp.Core.Domain.pdb
 C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Core.Domain\obj\Debug\net6.0\ref\StockApp.Core.Domain.dll
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Core.Domain\bin\Debug\net6.0\StockApp.Core.Domain.deps.json
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Core.Domain\bin\Debug\net6.0\StockApp.Core.Domain.dll
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Core.Domain\bin\Debug\net6.0\StockApp.Core.Domain.pdb
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Core.Domain\obj\Debug\net6.0\StockApp.Core.Domain.csproj.AssemblyReference.cache
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Core.Domain\obj\Debug\net6.0\StockApp.Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Core.Domain\obj\Debug\net6.0\StockApp.Core.Domain.AssemblyInfoInputs.cache
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Core.Domain\obj\Debug\net6.0\StockApp.Core.Domain.AssemblyInfo.cs
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Core.Domain\obj\Debug\net6.0\StockApp.Core.Domain.csproj.CoreCompileInputs.cache
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Core.Domain\obj\Debug\net6.0\StockApp.Core.Domain.dll
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Core.Domain\obj\Debug\net6.0\refint\StockApp.Core.Domain.dll
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Core.Domain\obj\Debug\net6.0\StockApp.Core.Domain.pdb
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Core.Domain\obj\Debug\net6.0\ref\StockApp.Core.Domain.dll

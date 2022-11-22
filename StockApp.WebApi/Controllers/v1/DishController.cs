@@ -81,15 +81,15 @@ namespace StockApp.WebApi.Controllers.v1
                     return BadRequest();
                 }
 
-                foreach (var ingredientId in vm.Ingredients)
-                {
-                    var ingredient = _IngredientService.GetByIdSaveViewModel(ingredientId);
-                    if (ingredient is null) return NotFound("El ingrediente engresado no ha sido encontrado.");
-                }
+                //foreach (var ingredientId in vm.Ingredients)
+                //{
+                //    var ingredient = await _IngredientService.GetByIdSaveViewModel(ingredientId.Id);
+                //    if (ingredient is null) return NotFound("El ingrediente engresado no ha sido encontrado.");
+                //}
 
-                var dish = await _DishService.Add(vm);
                 if (vm.Ingredients.Count() == 0) return BadRequest("Es neceario indicar los ingredientes del plato.");
-                else await _DishService.AddIngredients(dish.Id, vm.Ingredients);
+                var dish = await _DishService.Add(vm);
+               // else await _DishService.AddIngredients(dish.Id, vm.Ingredients);
                 return NoContent();
             }
             catch (Exception ex)
