@@ -19,19 +19,13 @@ namespace StockApp.Core.Application.Services
     {
         private readonly IGenericRepository<Model> _repository;
         private readonly IMapper _mapper;
-        private IGenericRepository<DishIngredient> repository;
+        
         private IMapper mapper;
 
         public GenericService(IGenericRepository<Model> repository, IMapper mapper)
         {
             _repository = repository;           
             _mapper = mapper;
-        }
-
-        public GenericService(IGenericRepository<DishIngredient> repository, IMapper mapper)
-        {
-            this.repository = repository;
-            this.mapper = mapper;
         }
 
         public virtual async Task Update(SaveViewModel vm,int id)

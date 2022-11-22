@@ -11,6 +11,6 @@ namespace StockApp.Core.Application.Interfaces.Services
 {
     public interface IDishIngredientService : IGenericService<SaveDishIngredientViewModel, DishIngredientViewModel, DishIngredient>
     {
-     
+       
     }
 }

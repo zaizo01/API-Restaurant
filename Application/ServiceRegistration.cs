@@ -23,6 +23,7 @@ namespace StockApp.Core.Application
             services.AddTransient<IIngredientService, IngredientService>();
             services.AddTransient<IOrderService, OrderService>();
             services.AddTransient<ITableService, TableService>();
+            services.AddTransient<IDishIngredientService, DishIngredientService>();
             #endregion
         }
     }

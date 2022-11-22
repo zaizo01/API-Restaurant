@@ -10,6 +10,6 @@ namespace StockApp.Core.Application.Interfaces.Repositories
 {
     public interface IDishIngredientRepository : IGenericRepository<DishIngredient>
     {
-        
+
     }
 }

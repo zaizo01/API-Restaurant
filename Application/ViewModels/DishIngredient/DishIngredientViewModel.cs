@@ -10,9 +10,10 @@ namespace StockApp.Core.Application.ViewModels.DishIngredient
 {
     public class DishIngredientViewModel
     {
-        public int DishesId { get; set; }
+        public int DishId { get; set; }
         public DishViewModel Dish { get; set; }
-        public int IngredientsId { get; set; }
+
+        public int IngredientId { get; set; }
         public IngredientViewModel Ingredient { get; set; }
     }
 }

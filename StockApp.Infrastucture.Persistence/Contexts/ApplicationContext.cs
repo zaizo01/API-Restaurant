@@ -20,7 +20,8 @@ namespace StockApp.Infrastructure.Persistence.Contexts
         public DbSet<Table> Tables { get; set; }   
         public DbSet<Dish> Dishs { get; set; }   
         public DbSet<Ingredient> Ingredients { get; set; }
-        public DbSet<DishIngredient> DishIngredient { get; set; }
+        public DbSet<DishIngredient> DishIngredients { get; set; }
+      
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
         {
@@ -49,6 +50,9 @@ namespace StockApp.Infrastructure.Persistence.Contexts
             modelBuilder.Entity<Table>()
                 .Property(prop => prop.TableStatus)
                 .HasDefaultValue(Core.Domain.Enums.TableStatus.Aviable);
+
+            modelBuilder.Entity<DishIngredient>()
+                 .HasKey(di => new { di.DishId, di.IngredientId });
 
             #region tables
 

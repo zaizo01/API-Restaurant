@@ -97,26 +97,11 @@ namespace StockApp.Core.Application.Mappings
 
             #endregion
 
-            CreateMap<DishIngredient, SaveDishIngredientViewModel>()
-           .ReverseMap()
-           .ForMember(x => x.Created, opt => opt.Ignore())
-           .ForMember(x => x.CreatedBy, opt => opt.Ignore())
-           .ForMember(x => x.LastModified, opt => opt.Ignore())
-           .ForMember(x => x.LastModifiedBy, opt => opt.Ignore());
-
-            CreateMap<DishIngredient, DishIngredientViewModel>()
-             .ReverseMap()
-             .ForMember(x => x.Created, opt => opt.Ignore())
-             .ForMember(x => x.CreatedBy, opt => opt.Ignore())
-             .ForMember(x => x.LastModified, opt => opt.Ignore())
-             .ForMember(x => x.LastModifiedBy, opt => opt.Ignore());
-
             #region DishProfile
 
             CreateMap<Dish, DishViewModel>()
               .ReverseMap()
               .ForMember(x => x.Created, opt => opt.Ignore())
-              .ForMember(x => x.Ingredients, opt => opt.Ignore())
               .ForMember(x => x.CreatedBy, opt => opt.Ignore())
               .ForMember(x => x.LastModified, opt => opt.Ignore())
               .ForMember(x => x.LastModifiedBy, opt => opt.Ignore());
@@ -127,6 +112,18 @@ namespace StockApp.Core.Application.Mappings
                 .ForMember(x => x.CreatedBy, opt => opt.Ignore())
                 .ForMember(x => x.LastModified, opt => opt.Ignore())
                 .ForMember(x => x.LastModifiedBy, opt => opt.Ignore());
+
+            #endregion
+
+            #region DishIngredientProfile
+
+            CreateMap<DishIngredient, DishIngredientViewModel>()
+              .ReverseMap();
+
+
+            CreateMap<DishIngredient, SaveDishIngredientViewModel>()
+                .ReverseMap();
+               
 
             #endregion
 
