@@ -13,8 +13,22 @@ namespace StockApp.Core.Application.Services
 {
     public class OrderService : GenericService<SaveOrderViewModel, OrderViewModel, Order>, IOrderService
     {
+        private readonly IGenericRepository<Order> _repository;
+        private readonly IMapper _mapper;
         public OrderService(IGenericRepository<Order> repository, IMapper mapper) : base(repository, mapper)
         {
+            _repository = repository;
+            _mapper = mapper;
+        }
+        public virtual async Task SaveOrder(SaveOrderViewModel vm)
+        {
+            
+            foreach (var dishId in vm.Dishes)
+            {
+                var order = _mapper.Map<Order>(vm);
+                order.TableId = dishId;
+                await _repository.AddAsync(order);
+            }
         }
     }
 }

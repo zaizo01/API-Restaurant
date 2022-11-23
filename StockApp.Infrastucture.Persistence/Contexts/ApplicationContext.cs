@@ -20,6 +20,8 @@ namespace StockApp.Infrastructure.Persistence.Contexts
         public DbSet<Table> Tables { get; set; }   
         public DbSet<Dish> Dishs { get; set; }   
         public DbSet<Ingredient> Ingredients { get; set; }
+        //public DbSet<OrderTableDish> OrderTableDishs { get; set; }
+
         //public DbSet<DishIngredient> DishIngredients { get; set; }
       
 
@@ -52,7 +54,11 @@ namespace StockApp.Infrastructure.Persistence.Contexts
                 .HasDefaultValue(Core.Domain.Enums.TableStatus.Aviable);
 
             modelBuilder.Entity<DishIngredient>()
-                 .HasKey(di => new { di.DishId, di.IngredientId });
+                 .HasKey(di => new { di.DishId, di.IngredientId }); 
+            
+            //modelBuilder.Entity<OrderTableDish>()
+            //     .HasKey(o => new { o.OrderId, o.TableId, o.DishId });
+
 
             #region tables
 
@@ -84,6 +90,15 @@ namespace StockApp.Infrastructure.Persistence.Contexts
 
 
             #endregion
+
+           // modelBuilder.Entity<Order>()
+           //.HasOne(p => p.Dishes)
+           //.WithMany().OnDelete(DeleteBehavior.NoAction);
+
+           // modelBuilder.Entity<Order>()
+           //.HasOne(p => p.Table)
+           //.WithMany().OnDelete(DeleteBehavior.NoAction);
+
 
             #region "Property configurations"
 

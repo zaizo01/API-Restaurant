@@ -15,9 +15,8 @@ namespace StockApp.Core.Application.ViewModels.Orders
         public int Id { get; set; }
         [Required(ErrorMessage = "Debe especificar la mesa a la que pertecene la orden")]
         public int TableId { get; set; }
-        public Table Table { get; set; }
         [Required(ErrorMessage = "Debe contener platos la orden")]
-        public ICollection<SaveDishViewModel> Dishes { get; set; }
+        public List<int> Dishes { get; set; }
         public decimal Subtotal { get; set; }
         public OrderStatus OrderStatus { get; set; }
     }

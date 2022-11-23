@@ -11,6 +11,6 @@ namespace StockApp.Core.Application.Interfaces.Services
     public interface IDishService: IGenericService<SaveDishViewModel, DishViewModel, Dish>
     {
         Task<List<DishViewModel>> GetAllViewModelWithInclude();
-        Task AddIngredients(int id, List<int> ingredients);
+        Task AddIngredients(SaveDishViewModel dish);
     }
 }

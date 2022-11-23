@@ -12,8 +12,7 @@ namespace StockApp.Core.Application.ViewModels.Orders
     {
         public int Id { get; set; }
         public int TableId { get; set; }
-        public Table Table { get; set; }
-        public ICollection<Dish> Dishes { get; set; }
+        public List<int> Dishes { get; set; }
         public decimal Subtotal { get; set; }
         public OrderStatus OrderStatus { get; set; }
     }

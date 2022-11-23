@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "6gVvRgVg3h90503IQlZBZnsRmUKrp35HrBEMdFuiWlDl1tsSFjToqtdhVPnO1SmRjeKNU/1rxzExV4Dh2pfSAw==",
+  "dgSpecHash": "KbWJI96222uNLaI/EJV4LRNZlAbLUZtdnKJm/GtAlMZyZgjShnrLX11J5UE4NgjhkI1f23G00ebJAAKriLb0SQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastructure.Identity\\StockApp.Infrastructure.Identity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\czaiz\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\czaiz\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
+    "C:\\Users\\czaiz\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\czaiz\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\czaiz\\.nuget\\packages\\mailkit\\3.4.1\\mailkit.3.4.1.nupkg.sha512",
     "C:\\Users\\czaiz\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.10\\microsoft.aspnetcore.cryptography.internal.6.0.10.nupkg.sha512",

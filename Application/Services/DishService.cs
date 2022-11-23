@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Dapper;
+using Microsoft.Data.SqlClient;
 using StockApp.Core.Application.Interfaces.Repositories;
 using StockApp.Core.Application.Interfaces.Services;
 using StockApp.Core.Application.ViewModels.Dishes;
@@ -28,14 +30,16 @@ namespace StockApp.Core.Application.Services
             _dishIngredientRepository = dishIngredientRepository;
         }
 
-        public async Task AddIngredients(int id, List<int> ingredients)
+        public async Task AddIngredients(SaveDishViewModel dish)
         {
-            
-            foreach (var ingredient in ingredients)
+            var dishEntity = mapper.Map<Dish>(dish);
+            await _dishRepository.AddAsync(dishEntity);
+
+            foreach (var ingredient in dish.Ingredients)
             {
                 var saveIngredientDTO = new SaveDishIngredientViewModel()
                 {
-                    DishId = id,
+                    DishId = dishEntity.Id,
                     IngredientId = ingredient
                 };
                 
@@ -45,7 +49,27 @@ namespace StockApp.Core.Application.Services
 
         public async Task<List<DishViewModel>> GetAllViewModelWithInclude()
         {
-            var dishList = await _dishRepository.GetAllWithIncludeAsync(new List<string> { "Ingredients" });
+            var dishList = await _dishRepository.GetAllAsync();
+            foreach (var item in dishList)
+            {
+                var dishIngredient = await _dishIngredientRepository.GetAllWithIncludeAsync(new List<string> { "Ingredient", "Dish" });
+                item.Ingredients = dishIngredient.Where(x => x.DishId == item.Id).Select(ig => new Ingredient
+                {
+                    Id = ig.IngredientId,
+                    Name = ig.Ingredient.Name
+                }).ToList();
+            }
+
+            //var cs = "Server=.;Database=NewStockAppApiDB2;Trusted_Connection=true;MultipleActiveResultSets=True";
+            //using var con = new SqlConnection(cs);
+            //con.Open();
+
+            //var query = @"SELECT [Dishs].Id,  [Dishs].Name, [Dishs].Price, [Dishs].DishCapacity, [Dishs].Category, [Ingredients].Name IngredientName
+            //              FROM [NewStockAppApiDB2].[dbo].[DishIngredient]
+            //              JOIN [NewStockAppApiDB2].[dbo].[Dishs] ON [DishIngredient].DishId = [Dishs].Id
+            //              JOIN [NewStockAppApiDB2].[dbo].[Ingredients] ON [DishIngredient].IngredientId = [Ingredients].Id";
+
+            //var queryResult = await con.QueryAsync<DishViewModel>(query);
 
             return dishList.Select(dish => new DishViewModel
             {

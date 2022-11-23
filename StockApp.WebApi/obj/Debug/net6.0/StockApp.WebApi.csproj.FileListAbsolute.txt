@@ -587,6 +587,7 @@ C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.WebApi\bin\Debug\net6
 C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.WebApi\bin\Debug\net6.0\StockApp.WebApi.pdb
 C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.WebApi\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.WebApi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.WebApi\bin\Debug\net6.0\Dapper.dll
 C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.WebApi\bin\Debug\net6.0\Humanizer.dll
 C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.WebApi\bin\Debug\net6.0\MailKit.dll
 C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.WebApi\bin\Debug\net6.0\MessagePack.dll

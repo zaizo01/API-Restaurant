@@ -76,7 +76,7 @@ namespace StockApp.WebApi.Controllers.v1
                     return BadRequest();
                 }
 
-                await _OrderService.Add(vm);
+                await _OrderService.SaveOrder(vm);
                 return NoContent();
             }
             catch (Exception ex)

@@ -3178,6 +3178,7 @@ C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\NewStockApp\bin\Debug\net6.0\r
 C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\NewStockApp\bin\Debug\net6.0\refs\WindowsBase.dll
 C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\NewStockApp\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\NewStockApp\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\NewStockApp\bin\Debug\net6.0\Dapper.dll
 C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\NewStockApp\bin\Debug\net6.0\Humanizer.dll
 C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\NewStockApp\bin\Debug\net6.0\MailKit.dll
 C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\NewStockApp\bin\Debug\net6.0\MessagePack.dll

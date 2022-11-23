@@ -90,7 +90,7 @@ namespace StockApp.WebApi.Controllers.v1
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> GetTableOrden(SaveTableViewModel vm)
+        public async Task<IActionResult> GetTableOrden(int id)
         {
             try
             {
@@ -99,7 +99,7 @@ namespace StockApp.WebApi.Controllers.v1
                     return BadRequest();
                 }
 
-                await _TableService.Add(vm);
+                await _TableService.GetTableOrden(id);
                 return NoContent();
             }
             catch (Exception ex)
@@ -113,7 +113,7 @@ namespace StockApp.WebApi.Controllers.v1
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> ChangeStatus(SaveTableViewModel vm)
+        public async Task<IActionResult> ChangeStatus(ChangeStatusTableViewModel vm)
         {
             try
             {
@@ -122,7 +122,7 @@ namespace StockApp.WebApi.Controllers.v1
                     return BadRequest();
                 }
 
-                await _TableService.Add(vm);
+                await _TableService.ChangesStatusTable(vm);
                 return NoContent();
             }
             catch (Exception ex)
@@ -133,10 +133,10 @@ namespace StockApp.WebApi.Controllers.v1
 
 
         [HttpPut("{id}")]
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(SaveTableViewModel))]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(UpdateTableViewModel))]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Update(int id, SaveTableViewModel vm)
+        public async Task<IActionResult> Update(int id, UpdateTableViewModel vm)
         {
             try
             {
@@ -145,7 +145,7 @@ namespace StockApp.WebApi.Controllers.v1
                     return BadRequest();
                 }
 
-                await _TableService.Update(vm, id);
+                await _TableService.CustomUpdateTable(id, vm);
                 return Ok(vm);
             }
             catch (Exception ex)

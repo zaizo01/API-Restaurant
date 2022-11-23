@@ -10,5 +10,8 @@ namespace StockApp.Core.Application.Interfaces.Services
 {
     public interface ITableService : IGenericService<SaveTableViewModel, TableViewModel, Table>
     {
+        Task CustomUpdateTable(int id, UpdateTableViewModel table);
+        Task GetTableOrden(int id);
+        Task ChangesStatusTable(ChangeStatusTableViewModel table);
     }
 }

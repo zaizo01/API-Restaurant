@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "8JYPSeqxePt4jFVygpt1nPiPGGOR+/bD5uQjG+3rf3zaznFXZqr1eQdfRdMHanah3IWOaOrGwMeSnfcEkxeqJg==",
+  "dgSpecHash": "BjUEzXXD8QISMaZh6oKztgu7AHTR4ckagnej2qSrtrjcATtlN4oXCSLmwCa07L2vKMuBzzHR1t9S90XJkLbGkA==",
   "success": true,
   "projectFilePath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.WebApi\\StockApp.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\czaiz\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\czaiz\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
+    "C:\\Users\\czaiz\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\czaiz\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\czaiz\\.nuget\\packages\\mailkit\\3.4.1\\mailkit.3.4.1.nupkg.sha512",
     "C:\\Users\\czaiz\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

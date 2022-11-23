@@ -59,12 +59,29 @@ namespace StockApp.Core.Application.Mappings
               .ForMember(x => x.LastModified, opt => opt.Ignore())
               .ForMember(x => x.LastModifiedBy, opt => opt.Ignore());
 
+            CreateMap<Table, UpdateTableViewModel>()
+            .ReverseMap()
+            .ForMember(x => x.Created, opt => opt.Ignore())
+            .ForMember(x => x.CreatedBy, opt => opt.Ignore())
+            .ForMember(x => x.LastModified, opt => opt.Ignore())
+            .ForMember(x => x.LastModifiedBy, opt => opt.Ignore()); 
+            
+            
+            CreateMap<Table, ChangeStatusTableViewModel>()
+            .ReverseMap()
+            .ForMember(x => x.Created, opt => opt.Ignore())
+            .ForMember(x => x.CreatedBy, opt => opt.Ignore())
+            .ForMember(x => x.LastModified, opt => opt.Ignore())
+            .ForMember(x => x.LastModifiedBy, opt => opt.Ignore());
+
             #endregion
 
             #region OrderProfile
 
             CreateMap<Order, OrderViewModel>()
                .ReverseMap()
+               .ForMember(x => x.Dishes, opt => opt.Ignore())
+               .ForMember(x => x.Table, opt => opt.Ignore())
                .ForMember(x => x.Created, opt => opt.Ignore())
                .ForMember(x => x.CreatedBy, opt => opt.Ignore())
                .ForMember(x => x.LastModified, opt => opt.Ignore())
@@ -72,6 +89,8 @@ namespace StockApp.Core.Application.Mappings
 
             CreateMap<Order, SaveOrderViewModel>()
               .ReverseMap()
+              .ForMember(x => x.Dishes, opt => opt.Ignore())
+              .ForMember(x => x.Table, opt => opt.Ignore())
               .ForMember(x => x.Created, opt => opt.Ignore())
               .ForMember(x => x.CreatedBy, opt => opt.Ignore())
               .ForMember(x => x.LastModified, opt => opt.Ignore())
@@ -101,6 +120,7 @@ namespace StockApp.Core.Application.Mappings
 
             CreateMap<Dish, DishViewModel>()
               .ReverseMap()
+              .ForMember(x => x.Ingredients, opt => opt.Ignore())
               .ForMember(x => x.Created, opt => opt.Ignore())
               .ForMember(x => x.CreatedBy, opt => opt.Ignore())
               .ForMember(x => x.LastModified, opt => opt.Ignore())
@@ -108,6 +128,7 @@ namespace StockApp.Core.Application.Mappings
 
             CreateMap<Dish, SaveDishViewModel>()
                 .ReverseMap()
+                .ForMember(x => x.Ingredients, opt => opt.Ignore())
                 .ForMember(x => x.Created, opt => opt.Ignore())
                 .ForMember(x => x.CreatedBy, opt => opt.Ignore())
                 .ForMember(x => x.LastModified, opt => opt.Ignore())

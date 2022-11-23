@@ -22,7 +22,7 @@ namespace StockApp.Core.Application.ViewModels.Dishes
         [Required(ErrorMessage = "La categoria del plato es requerida")]
         public CategoryDish Category { get; set; }
         [Required(ErrorMessage = "Los ingredientes del plato son requeridos")]
-        public List<SaveIngredientViewModel> Ingredients { get; set; }
+        public virtual List<int> Ingredients { get; set; }
        
     }
 }
