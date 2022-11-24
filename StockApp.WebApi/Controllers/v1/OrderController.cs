@@ -26,7 +26,7 @@ namespace StockApp.WebApi.Controllers.v1
             try
             {
                 var Orders = await _OrderService.GetAllViewModel();
-
+                var result = await _OrderService.GetAllViewModelWithInclude();
                 if (Orders == null || Orders.Count == 0)
                 {
                     return NotFound("No existen ordenes.");

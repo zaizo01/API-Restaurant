@@ -170,7 +170,7 @@ namespace StockApp.Infrastucture.Persistence.Migrations
                         column: x => x.OrderId,
                         principalTable: "Orders",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_OrderTableDishs_Tables_TableId",
                         column: x => x.TableId,

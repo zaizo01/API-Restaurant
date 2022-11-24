@@ -19,27 +19,6 @@ C:\Users\ltavarez\Desktop\NewStockApp with login\StockApp.Infrastructure.Identit
 C:\Users\ltavarez\Desktop\NewStockApp with login\StockApp.Infrastructure.Identity\obj\Debug\net6.0\StockApp.Infrastructure.Identity.pdb
 C:\Users\ltavarez\Desktop\NewStockApp with login\StockApp.Infrastructure.Identity\obj\Debug\net6.0\StockApp.Infrastructure.Identity.genruntimeconfig.cache
 C:\Users\ltavarez\Desktop\NewStockApp with login\StockApp.Infrastructure.Identity\obj\Debug\net6.0\ref\StockApp.Infrastructure.Identity.dll
-C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\bin\Debug\net6.0\StockApp.Infrastructure.Identity.deps.json
-C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\bin\Debug\net6.0\StockApp.Infrastructure.Identity.runtimeconfig.json
-C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\bin\Debug\net6.0\StockApp.Infrastructure.Identity.dll
-C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\bin\Debug\net6.0\StockApp.Infrastructure.Identity.pdb
-C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\bin\Debug\net6.0\StockApp.Core.Application.dll
-C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\bin\Debug\net6.0\StockApp.Core.Domain.dll
-C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\bin\Debug\net6.0\StockApp.Infrastructure.Shared.dll
-C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\bin\Debug\net6.0\StockApp.Core.Application.pdb
-C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\bin\Debug\net6.0\StockApp.Core.Domain.pdb
-C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\bin\Debug\net6.0\StockApp.Infrastructure.Shared.pdb
-C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\obj\Debug\net6.0\StockApp.Infrastructure.Identity.csproj.AssemblyReference.cache
-C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\obj\Debug\net6.0\StockApp.Infrastructure.Identity.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\obj\Debug\net6.0\StockApp.Infrastructure.Identity.AssemblyInfoInputs.cache
-C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\obj\Debug\net6.0\StockApp.Infrastructure.Identity.AssemblyInfo.cs
-C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\obj\Debug\net6.0\StockApp.Infrastructure.Identity.csproj.CoreCompileInputs.cache
-C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\obj\Debug\net6.0\StockApp.Infrastructure.Identity.csproj.CopyComplete
-C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\obj\Debug\net6.0\StockApp.Infrastructure.Identity.dll
-C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\obj\Debug\net6.0\refint\StockApp.Infrastructure.Identity.dll
-C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\obj\Debug\net6.0\StockApp.Infrastructure.Identity.pdb
-C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\obj\Debug\net6.0\StockApp.Infrastructure.Identity.genruntimeconfig.cache
-C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\obj\Debug\net6.0\ref\StockApp.Infrastructure.Identity.dll
 C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Infrastructure.Identity\bin\Debug\net6.0\StockApp.Infrastructure.Identity.deps.json
 C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Infrastructure.Identity\bin\Debug\net6.0\StockApp.Infrastructure.Identity.runtimeconfig.json
 C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Infrastructure.Identity\bin\Debug\net6.0\StockApp.Infrastructure.Identity.dll
@@ -61,3 +40,24 @@ C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Infrastructure.Identi
 C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Infrastructure.Identity\obj\Debug\net6.0\StockApp.Infrastructure.Identity.pdb
 C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Infrastructure.Identity\obj\Debug\net6.0\StockApp.Infrastructure.Identity.genruntimeconfig.cache
 C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.Infrastructure.Identity\obj\Debug\net6.0\ref\StockApp.Infrastructure.Identity.dll
+C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\bin\Debug\net6.0\StockApp.Infrastructure.Identity.deps.json
+C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\bin\Debug\net6.0\StockApp.Infrastructure.Identity.runtimeconfig.json
+C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\bin\Debug\net6.0\StockApp.Infrastructure.Identity.dll
+C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\bin\Debug\net6.0\StockApp.Infrastructure.Identity.pdb
+C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\bin\Debug\net6.0\StockApp.Core.Application.dll
+C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\bin\Debug\net6.0\StockApp.Core.Domain.dll
+C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\bin\Debug\net6.0\StockApp.Infrastructure.Shared.dll
+C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\bin\Debug\net6.0\StockApp.Core.Application.pdb
+C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\bin\Debug\net6.0\StockApp.Core.Domain.pdb
+C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\bin\Debug\net6.0\StockApp.Infrastructure.Shared.pdb
+C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\obj\Debug\net6.0\StockApp.Infrastructure.Identity.csproj.AssemblyReference.cache
+C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\obj\Debug\net6.0\StockApp.Infrastructure.Identity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\obj\Debug\net6.0\StockApp.Infrastructure.Identity.AssemblyInfoInputs.cache
+C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\obj\Debug\net6.0\StockApp.Infrastructure.Identity.AssemblyInfo.cs
+C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\obj\Debug\net6.0\StockApp.Infrastructure.Identity.csproj.CoreCompileInputs.cache
+C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\obj\Debug\net6.0\StockApp.Infrastructure.Identity.csproj.CopyComplete
+C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\obj\Debug\net6.0\StockApp.Infrastructure.Identity.dll
+C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\obj\Debug\net6.0\refint\StockApp.Infrastructure.Identity.dll
+C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\obj\Debug\net6.0\StockApp.Infrastructure.Identity.pdb
+C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\obj\Debug\net6.0\StockApp.Infrastructure.Identity.genruntimeconfig.cache
+C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastructure.Identity\obj\Debug\net6.0\ref\StockApp.Infrastructure.Identity.dll

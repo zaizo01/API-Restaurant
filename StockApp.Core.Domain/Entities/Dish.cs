@@ -15,5 +15,6 @@ namespace StockApp.Core.Domain.Entities
         public int DishCapacity { get; set; }
         public CategoryDish Category { get; set; }
         public virtual ICollection<Ingredient> Ingredients { get; set; }
+        public virtual ICollection<OrderTableDish> OrderTableDishs { get; set; }
     }
 }

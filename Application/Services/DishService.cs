@@ -60,17 +60,6 @@ namespace StockApp.Core.Application.Services
                 }).ToList();
             }
 
-            //var cs = "Server=.;Database=NewStockAppApiDB2;Trusted_Connection=true;MultipleActiveResultSets=True";
-            //using var con = new SqlConnection(cs);
-            //con.Open();
-
-            //var query = @"SELECT [Dishs].Id,  [Dishs].Name, [Dishs].Price, [Dishs].DishCapacity, [Dishs].Category, [Ingredients].Name IngredientName
-            //              FROM [NewStockAppApiDB2].[dbo].[DishIngredient]
-            //              JOIN [NewStockAppApiDB2].[dbo].[Dishs] ON [DishIngredient].DishId = [Dishs].Id
-            //              JOIN [NewStockAppApiDB2].[dbo].[Ingredients] ON [DishIngredient].IngredientId = [Ingredients].Id";
-
-            //var queryResult = await con.QueryAsync<DishViewModel>(query);
-
             return dishList.Select(dish => new DishViewModel
             {
                 Id = dish.Id,

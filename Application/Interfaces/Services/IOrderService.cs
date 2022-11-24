@@ -11,5 +11,6 @@ namespace StockApp.Core.Application.Interfaces.Services
     public interface IOrderService : IGenericService<SaveOrderViewModel, OrderViewModel, Order>
     {
         Task SaveOrder(SaveOrderViewModel vm);
+        Task<List<OrderDetailViewModel>> GetAllViewModelWithInclude();
     }
 }

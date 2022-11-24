@@ -12,6 +12,7 @@ namespace StockApp.Core.Domain.Entities
         public OrderStatus OrderStatus { get; set; }
 
         public virtual ICollection<Dish> Dishes { get; set; }
+        public virtual ICollection<OrderTableDish> OrderTableDishs { get; set; }
 
         public virtual Table Table { get; set; }
 

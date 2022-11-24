@@ -335,19 +335,19 @@ namespace StockApp.Infrastucture.Persistence.Migrations
             modelBuilder.Entity("StockApp.Core.Domain.Entities.OrderTableDish", b =>
                 {
                     b.HasOne("StockApp.Core.Domain.Entities.Dish", "Dish")
-                        .WithMany()
+                        .WithMany("OrderTableDishs")
                         .HasForeignKey("DishId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("StockApp.Core.Domain.Entities.Order", "Order")
-                        .WithMany()
+                        .WithMany("OrderTableDishs")
                         .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("StockApp.Core.Domain.Entities.Table", "Table")
-                        .WithMany()
+                        .WithMany("OrderTableDishs")
                         .HasForeignKey("TableId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -378,15 +378,21 @@ namespace StockApp.Infrastucture.Persistence.Migrations
             modelBuilder.Entity("StockApp.Core.Domain.Entities.Dish", b =>
                 {
                     b.Navigation("Ingredients");
+
+                    b.Navigation("OrderTableDishs");
                 });
 
             modelBuilder.Entity("StockApp.Core.Domain.Entities.Order", b =>
                 {
                     b.Navigation("Dishes");
+
+                    b.Navigation("OrderTableDishs");
                 });
 
             modelBuilder.Entity("StockApp.Core.Domain.Entities.Table", b =>
                 {
+                    b.Navigation("OrderTableDishs");
+
                     b.Navigation("Orders");
                 });
 #pragma warning restore 612, 618

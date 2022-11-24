@@ -5,6 +5,7 @@ using StockApp.Core.Application.ViewModels.Dishes;
 using StockApp.Core.Application.ViewModels.DishIngredient;
 using StockApp.Core.Application.ViewModels.Ingredients;
 using StockApp.Core.Application.ViewModels.Orders;
+using StockApp.Core.Application.ViewModels.OrderTableDish;
 using StockApp.Core.Application.ViewModels.Products;
 using StockApp.Core.Application.ViewModels.Tables;
 using StockApp.Core.Application.ViewModels.User;
@@ -80,6 +81,7 @@ namespace StockApp.Core.Application.Mappings
 
             CreateMap<Order, OrderViewModel>()
                .ReverseMap()
+               .ForMember(x => x.OrderTableDishs, opt => opt.Ignore())
                .ForMember(x => x.Dishes, opt => opt.Ignore())
                .ForMember(x => x.Table, opt => opt.Ignore())
                .ForMember(x => x.Created, opt => opt.Ignore())
@@ -89,6 +91,7 @@ namespace StockApp.Core.Application.Mappings
 
             CreateMap<Order, SaveOrderViewModel>()
               .ReverseMap()
+              .ForMember(x => x.OrderTableDishs, opt => opt.Ignore())
               .ForMember(x => x.Dishes, opt => opt.Ignore())
               .ForMember(x => x.Table, opt => opt.Ignore())
               .ForMember(x => x.Created, opt => opt.Ignore())
@@ -141,11 +144,16 @@ namespace StockApp.Core.Application.Mappings
             CreateMap<DishIngredient, DishIngredientViewModel>()
               .ReverseMap();
 
-
             CreateMap<DishIngredient, SaveDishIngredientViewModel>()
                 .ReverseMap();
-               
+            #endregion
 
+            #region OrderTableDishProfile
+            CreateMap<OrderTableDish, OrderTableDishViewModel>()
+             .ReverseMap();
+
+            CreateMap<OrderTableDish, SaveOrderTableDishViewModel>()
+                .ReverseMap();
             #endregion
 
             #region CategoryProfile

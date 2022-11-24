@@ -20,7 +20,7 @@ namespace StockApp.Infrastructure.Persistence.Contexts
         public DbSet<Table> Tables { get; set; }   
         public DbSet<Dish> Dishs { get; set; }   
         public DbSet<Ingredient> Ingredients { get; set; }
-        //public DbSet<OrderTableDish> OrderTableDishs { get; set; }
+        public DbSet<OrderTableDish> OrderTableDishs { get; set; }
 
         //public DbSet<DishIngredient> DishIngredients { get; set; }
       
@@ -54,11 +54,28 @@ namespace StockApp.Infrastructure.Persistence.Contexts
                 .HasDefaultValue(Core.Domain.Enums.TableStatus.Aviable);
 
             modelBuilder.Entity<DishIngredient>()
-                 .HasKey(di => new { di.DishId, di.IngredientId }); 
-            
-            //modelBuilder.Entity<OrderTableDish>()
-            //     .HasKey(o => new { o.OrderId, o.TableId, o.DishId });
+                 .HasKey(di => new { di.DishId, di.IngredientId });
 
+            modelBuilder.Entity<OrderTableDish>()
+                 .HasKey(o => new { o.OrderId, o.TableId, o.DishId });
+
+            modelBuilder.Entity<OrderTableDish>()
+                  .HasOne(t => t.Order)
+                  .WithMany(t => t.OrderTableDishs)
+                  .HasForeignKey(t => t.OrderId)
+                  .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<OrderTableDish>()
+                 .HasOne(t => t.Table)
+                 .WithMany(t => t.OrderTableDishs)
+                 .HasForeignKey(t => t.TableId)
+                 .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<OrderTableDish>()
+                   .HasOne(t => t.Dish)
+                   .WithMany(t => t.OrderTableDishs)
+                   .HasForeignKey(t => t.DishId)
+                   .OnDelete(DeleteBehavior.Cascade);
 
             #region tables
 
