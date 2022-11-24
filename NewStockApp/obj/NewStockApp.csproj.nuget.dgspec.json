@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\NewStockApp\\NewStockApp.csproj": {}
+    "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\NewStockApp\\NewStockApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\Application\\StockApp.Core.Application.csproj": {
+    "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\Application\\StockApp.Core.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\Application\\StockApp.Core.Application.csproj",
+        "projectUniqueName": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\Application\\StockApp.Core.Application.csproj",
         "projectName": "StockApp.Core.Application",
-        "projectPath": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\Application\\StockApp.Core.Application.csproj",
-        "packagesPath": "C:\\Users\\zaiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\Application\\obj\\",
+        "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\Application\\StockApp.Core.Application.csproj",
+        "packagesPath": "C:\\Users\\czaiz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\zaiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\czaiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj": {
-                "projectPath": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj"
+              "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj": {
+                "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj"
               }
             }
           }
@@ -104,25 +100,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\NewStockApp\\NewStockApp.csproj": {
+    "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\NewStockApp\\NewStockApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\NewStockApp\\NewStockApp.csproj",
+        "projectUniqueName": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\NewStockApp\\NewStockApp.csproj",
         "projectName": "NewStockApp",
-        "projectPath": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\NewStockApp\\NewStockApp.csproj",
-        "packagesPath": "C:\\Users\\zaiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\NewStockApp\\obj\\",
+        "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\NewStockApp\\NewStockApp.csproj",
+        "packagesPath": "C:\\Users\\czaiz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\NewStockApp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\zaiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\czaiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -136,20 +128,20 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\Application\\StockApp.Core.Application.csproj": {
-                "projectPath": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\Application\\StockApp.Core.Application.csproj"
+              "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\Application\\StockApp.Core.Application.csproj": {
+                "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\Application\\StockApp.Core.Application.csproj"
               },
-              "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj": {
-                "projectPath": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj"
+              "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj": {
+                "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj"
               },
-              "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Infrastructure.Identity\\StockApp.Infrastructure.Identity.csproj": {
-                "projectPath": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Infrastructure.Identity\\StockApp.Infrastructure.Identity.csproj"
+              "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastructure.Identity\\StockApp.Infrastructure.Identity.csproj": {
+                "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastructure.Identity\\StockApp.Infrastructure.Identity.csproj"
               },
-              "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Infrastructure.Shared\\StockApp.Infrastructure.Shared.csproj": {
-                "projectPath": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Infrastructure.Shared\\StockApp.Infrastructure.Shared.csproj"
+              "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastructure.Shared\\StockApp.Infrastructure.Shared.csproj": {
+                "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastructure.Shared\\StockApp.Infrastructure.Shared.csproj"
               },
-              "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Infrastucture.Persistence\\StockApp.Infrastucture.Persistence.csproj": {
-                "projectPath": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Infrastucture.Persistence\\StockApp.Infrastucture.Persistence.csproj"
+              "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastucture.Persistence\\StockApp.Infrastucture.Persistence.csproj": {
+                "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastucture.Persistence\\StockApp.Infrastucture.Persistence.csproj"
               }
             }
           }
@@ -197,25 +189,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj": {
+    "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj",
         "projectName": "StockApp.Core.Domain",
-        "projectPath": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj",
-        "packagesPath": "C:\\Users\\zaiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Core.Domain\\obj\\",
+        "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj",
+        "packagesPath": "C:\\Users\\czaiz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Core.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\zaiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\czaiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -255,25 +243,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Infrastructure.Identity\\StockApp.Infrastructure.Identity.csproj": {
+    "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastructure.Identity\\StockApp.Infrastructure.Identity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Infrastructure.Identity\\StockApp.Infrastructure.Identity.csproj",
+        "projectUniqueName": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastructure.Identity\\StockApp.Infrastructure.Identity.csproj",
         "projectName": "StockApp.Infrastructure.Identity",
-        "projectPath": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Infrastructure.Identity\\StockApp.Infrastructure.Identity.csproj",
-        "packagesPath": "C:\\Users\\zaiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Infrastructure.Identity\\obj\\",
+        "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastructure.Identity\\StockApp.Infrastructure.Identity.csproj",
+        "packagesPath": "C:\\Users\\czaiz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastructure.Identity\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\zaiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\czaiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -287,14 +271,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\Application\\StockApp.Core.Application.csproj": {
-                "projectPath": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\Application\\StockApp.Core.Application.csproj"
+              "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\Application\\StockApp.Core.Application.csproj": {
+                "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\Application\\StockApp.Core.Application.csproj"
               },
-              "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj": {
-                "projectPath": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj"
+              "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj": {
+                "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj"
               },
-              "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Infrastructure.Shared\\StockApp.Infrastructure.Shared.csproj": {
-                "projectPath": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Infrastructure.Shared\\StockApp.Infrastructure.Shared.csproj"
+              "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastructure.Shared\\StockApp.Infrastructure.Shared.csproj": {
+                "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastructure.Shared\\StockApp.Infrastructure.Shared.csproj"
               }
             }
           }
@@ -359,25 +343,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Infrastructure.Shared\\StockApp.Infrastructure.Shared.csproj": {
+    "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastructure.Shared\\StockApp.Infrastructure.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Infrastructure.Shared\\StockApp.Infrastructure.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastructure.Shared\\StockApp.Infrastructure.Shared.csproj",
         "projectName": "StockApp.Infrastructure.Shared",
-        "projectPath": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Infrastructure.Shared\\StockApp.Infrastructure.Shared.csproj",
-        "packagesPath": "C:\\Users\\zaiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Infrastructure.Shared\\obj\\",
+        "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastructure.Shared\\StockApp.Infrastructure.Shared.csproj",
+        "packagesPath": "C:\\Users\\czaiz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastructure.Shared\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\zaiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\czaiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -391,11 +371,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\Application\\StockApp.Core.Application.csproj": {
-                "projectPath": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\Application\\StockApp.Core.Application.csproj"
+              "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\Application\\StockApp.Core.Application.csproj": {
+                "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\Application\\StockApp.Core.Application.csproj"
               },
-              "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj": {
-                "projectPath": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj"
+              "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj": {
+                "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj"
               }
             }
           }
@@ -438,25 +418,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Infrastucture.Persistence\\StockApp.Infrastucture.Persistence.csproj": {
+    "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastucture.Persistence\\StockApp.Infrastucture.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Infrastucture.Persistence\\StockApp.Infrastucture.Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastucture.Persistence\\StockApp.Infrastucture.Persistence.csproj",
         "projectName": "StockApp.Infrastucture.Persistence",
-        "projectPath": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Infrastucture.Persistence\\StockApp.Infrastucture.Persistence.csproj",
-        "packagesPath": "C:\\Users\\zaiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Infrastucture.Persistence\\obj\\",
+        "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastucture.Persistence\\StockApp.Infrastucture.Persistence.csproj",
+        "packagesPath": "C:\\Users\\czaiz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastucture.Persistence\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\zaiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\czaiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -470,11 +446,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\Application\\StockApp.Core.Application.csproj": {
-                "projectPath": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\Application\\StockApp.Core.Application.csproj"
+              "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\Application\\StockApp.Core.Application.csproj": {
+                "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\Application\\StockApp.Core.Application.csproj"
               },
-              "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj": {
-                "projectPath": "C:\\Users\\zaiz\\3D Objects\\NewStockApp with api\\NewStockApp with api\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj"
+              "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj": {
+                "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj"
               }
             }
           }
@@ -517,7 +493,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

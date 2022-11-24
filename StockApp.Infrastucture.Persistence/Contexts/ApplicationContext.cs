@@ -63,19 +63,19 @@ namespace StockApp.Infrastructure.Persistence.Contexts
                   .HasOne(t => t.Order)
                   .WithMany(t => t.OrderTableDishs)
                   .HasForeignKey(t => t.OrderId)
-                  .OnDelete(DeleteBehavior.Restrict);
+                  .OnDelete(DeleteBehavior.NoAction);
 
             modelBuilder.Entity<OrderTableDish>()
                  .HasOne(t => t.Table)
                  .WithMany(t => t.OrderTableDishs)
                  .HasForeignKey(t => t.TableId)
-                 .OnDelete(DeleteBehavior.Cascade);
+                 .OnDelete(DeleteBehavior.NoAction);
 
             modelBuilder.Entity<OrderTableDish>()
                    .HasOne(t => t.Dish)
                    .WithMany(t => t.OrderTableDishs)
                    .HasForeignKey(t => t.DishId)
-                   .OnDelete(DeleteBehavior.Cascade);
+                   .OnDelete(DeleteBehavior.NoAction);
 
             #region tables
 

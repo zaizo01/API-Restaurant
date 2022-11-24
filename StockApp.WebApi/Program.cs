@@ -3,6 +3,7 @@ using StockApp.Infrastructure.Identity;
 using StockApp.Infrastructure.Persistence;
 using StockApp.Infrastructure.Shared;
 using StockApp.WebApi.Extensions;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +22,8 @@ builder.Services.AddSwaggerExtension();
 builder.Services.AddApiVersioningExtension();
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession();
+builder.Services.AddControllers().AddJsonOptions(x =>
+x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 

@@ -15,6 +15,6 @@ namespace StockApp.Core.Application.Interfaces.Repositories
         Task<List<Entity>> GetAllAsync();
         Task<Entity> GetByIdAsync(int id);
         Task<List<Entity>> GetAllWithIncludeAsync(List<string> properties);
-        IQueryable<Entity> Find(Expression<Func<Entity, bool>> predicate);
+        
     }
 }

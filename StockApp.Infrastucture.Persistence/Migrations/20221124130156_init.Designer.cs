@@ -12,7 +12,7 @@ using StockApp.Infrastructure.Persistence.Contexts;
 namespace StockApp.Infrastucture.Persistence.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20221123230022_init")]
+    [Migration("20221124130156_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -339,19 +339,19 @@ namespace StockApp.Infrastucture.Persistence.Migrations
                     b.HasOne("StockApp.Core.Domain.Entities.Dish", "Dish")
                         .WithMany("OrderTableDishs")
                         .HasForeignKey("DishId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("StockApp.Core.Domain.Entities.Order", "Order")
                         .WithMany("OrderTableDishs")
                         .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("StockApp.Core.Domain.Entities.Table", "Table")
                         .WithMany("OrderTableDishs")
                         .HasForeignKey("TableId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Dish");

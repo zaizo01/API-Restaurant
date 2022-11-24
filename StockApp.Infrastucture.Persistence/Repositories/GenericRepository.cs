@@ -12,12 +12,9 @@ namespace StockApp.Infrastructure.Persistence.Repository
     {
         private readonly ApplicationContext _dbContext;
 
-        private DbSet<Entity> _table = null;
-
         public GenericRepository(ApplicationContext dbContext)
         {
             _dbContext = dbContext;
-            _table = _dbContext.Set<Entity>();
         }
 
         public virtual async Task<Entity> AddAsync(Entity entity)
@@ -62,9 +59,5 @@ namespace StockApp.Infrastructure.Persistence.Repository
             return await _dbContext.Set<Entity>().FindAsync(id);
         }
 
-        public IQueryable<Entity> Find(Expression<Func<Entity, bool>> predicate)
-        {
-            return _table.Where(predicate).AsQueryable();
-        }
     }
 }

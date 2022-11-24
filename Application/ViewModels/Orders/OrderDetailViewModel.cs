@@ -11,6 +11,7 @@ namespace StockApp.Core.Application.ViewModels.Orders
 {
     public class OrderDetailViewModel
     {
+        public int Id { get; set; }
         public int TableId { get; set; }
 
         public decimal Subtotal { get; set; }
@@ -19,6 +20,6 @@ namespace StockApp.Core.Application.ViewModels.Orders
 
         public virtual ICollection<DishViewModel> Dishes { get; set; }
 
-        public virtual Table Table { get; set; }
+        //public virtual Table Table { get; set; }
     }
 }

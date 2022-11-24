@@ -18,15 +18,15 @@ namespace StockApp.WebApi.Controllers.v1
         }
 
         [HttpGet]
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(OrderViewModel))]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(OrderDetailViewModel))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> List()
+        public IActionResult List()
         {
             try
             {
-                var Orders = await _OrderService.GetAllViewModel();
-                var result = await _OrderService.GetAllViewModelWithInclude();
+                var Orders =  _OrderService.GetAllViewModelWithInclude();
+
                 if (Orders == null || Orders.Count == 0)
                 {
                     return NotFound("No existen ordenes.");
@@ -41,20 +41,21 @@ namespace StockApp.WebApi.Controllers.v1
         }
 
         [HttpGet("{id}")]
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(SaveOrderViewModel))]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(OrderDetailViewModel))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> GetById(int id)
         {
             try
             {
-                var Order = await _OrderService.GetByIdSaveViewModel(id);
-
-                if (Order == null)
+                var existOrder = await _OrderService.GetByIdSaveViewModel(id);
+                
+                if (existOrder is null)
                 {
                     return NotFound("No existe la orden.");
                 }
 
+                var Order = _OrderService.GetByIdViewModelWithInclude(id);
                 return Ok(Order);
             }
             catch (Exception ex)
@@ -115,7 +116,7 @@ namespace StockApp.WebApi.Controllers.v1
         {
             try
             {
-                await _OrderService.Delete(id);
+                await _OrderService.DeleteOrderCustom(id);
                 return NoContent();
             }
             catch (Exception ex)

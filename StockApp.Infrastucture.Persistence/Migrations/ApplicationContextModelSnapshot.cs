@@ -337,19 +337,19 @@ namespace StockApp.Infrastucture.Persistence.Migrations
                     b.HasOne("StockApp.Core.Domain.Entities.Dish", "Dish")
                         .WithMany("OrderTableDishs")
                         .HasForeignKey("DishId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("StockApp.Core.Domain.Entities.Order", "Order")
                         .WithMany("OrderTableDishs")
                         .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("StockApp.Core.Domain.Entities.Table", "Table")
                         .WithMany("OrderTableDishs")
                         .HasForeignKey("TableId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Dish");
