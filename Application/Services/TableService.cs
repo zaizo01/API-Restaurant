@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using StockApp.Core.Application.Interfaces.Repositories;
 using StockApp.Core.Application.Interfaces.Services;
+using StockApp.Core.Application.ViewModels.Orders;
 using StockApp.Core.Application.ViewModels.Tables;
 using StockApp.Core.Domain.Entities;
 using System;
@@ -15,10 +16,12 @@ namespace StockApp.Core.Application.Services
     {
         private readonly IGenericRepository<Table> _repository;
         private readonly IMapper _mapper;
+        private readonly ITableRepository _repository2;
 
-        public TableService(IGenericRepository<Table> repository, IMapper mapper) : base(repository, mapper)
+        public TableService(IGenericRepository<Table> repository, ITableRepository repository2, IMapper mapper) : base(repository, mapper)
         {
             _repository = repository;
+            _repository2 = repository2;
             _mapper = mapper;
         }
 
@@ -38,9 +41,9 @@ namespace StockApp.Core.Application.Services
 
         }
 
-        public virtual async Task GetTableOrden(int id)
+        public List<OrderDetailViewModel> GetTableOrden(int id)
         {
-            throw new NotImplementedException();
+            return _repository2.GetAllCustomInclude(id);
         }
     }
 }

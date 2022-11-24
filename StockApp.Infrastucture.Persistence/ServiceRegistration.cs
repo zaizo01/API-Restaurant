@@ -39,6 +39,7 @@ namespace StockApp.Infrastructure.Persistence
             services.AddTransient<IDishRepository, DishRepository>();  
             services.AddTransient<IDishIngredientRepository, DishIngredientRepository>();  
             services.AddTransient<IOrderRepository, OrderRepository>();  
+            services.AddTransient<ITableRepository, TableRepository>();  
             services.AddTransient<IOrderTableDishRepository, OrderTableDishRepository>();  
             
             #endregion

@@ -100,3 +100,20 @@ C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infr
 C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastucture.Persistence\obj\Debug\net6.0\refint\StockApp.Infrastucture.Persistence.dll
 C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastucture.Persistence\obj\Debug\net6.0\StockApp.Infrastucture.Persistence.pdb
 C:\Users\zaiz\3D Objects\NewStockApp with api\NewStockApp with api\StockApp.Infrastucture.Persistence\obj\Debug\net6.0\ref\StockApp.Infrastucture.Persistence.dll
+C:\Users\zaiz\Desktop\InternetBaking\API-Restaurant\StockApp.Infrastucture.Persistence\bin\Debug\net6.0\StockApp.Infrastucture.Persistence.deps.json
+C:\Users\zaiz\Desktop\InternetBaking\API-Restaurant\StockApp.Infrastucture.Persistence\bin\Debug\net6.0\StockApp.Infrastucture.Persistence.dll
+C:\Users\zaiz\Desktop\InternetBaking\API-Restaurant\StockApp.Infrastucture.Persistence\bin\Debug\net6.0\StockApp.Infrastucture.Persistence.pdb
+C:\Users\zaiz\Desktop\InternetBaking\API-Restaurant\StockApp.Infrastucture.Persistence\bin\Debug\net6.0\StockApp.Core.Application.dll
+C:\Users\zaiz\Desktop\InternetBaking\API-Restaurant\StockApp.Infrastucture.Persistence\bin\Debug\net6.0\StockApp.Core.Domain.dll
+C:\Users\zaiz\Desktop\InternetBaking\API-Restaurant\StockApp.Infrastucture.Persistence\bin\Debug\net6.0\StockApp.Core.Application.pdb
+C:\Users\zaiz\Desktop\InternetBaking\API-Restaurant\StockApp.Infrastucture.Persistence\bin\Debug\net6.0\StockApp.Core.Domain.pdb
+C:\Users\zaiz\Desktop\InternetBaking\API-Restaurant\StockApp.Infrastucture.Persistence\obj\Debug\net6.0\StockApp.Infrastucture.Persistence.csproj.AssemblyReference.cache
+C:\Users\zaiz\Desktop\InternetBaking\API-Restaurant\StockApp.Infrastucture.Persistence\obj\Debug\net6.0\StockApp.Infrastucture.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zaiz\Desktop\InternetBaking\API-Restaurant\StockApp.Infrastucture.Persistence\obj\Debug\net6.0\StockApp.Infrastucture.Persistence.AssemblyInfoInputs.cache
+C:\Users\zaiz\Desktop\InternetBaking\API-Restaurant\StockApp.Infrastucture.Persistence\obj\Debug\net6.0\StockApp.Infrastucture.Persistence.AssemblyInfo.cs
+C:\Users\zaiz\Desktop\InternetBaking\API-Restaurant\StockApp.Infrastucture.Persistence\obj\Debug\net6.0\StockApp.Infrastucture.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\zaiz\Desktop\InternetBaking\API-Restaurant\StockApp.Infrastucture.Persistence\obj\Debug\net6.0\StockApp.Infrastucture.Persistence.csproj.CopyComplete
+C:\Users\zaiz\Desktop\InternetBaking\API-Restaurant\StockApp.Infrastucture.Persistence\obj\Debug\net6.0\StockApp.Infrastucture.Persistence.dll
+C:\Users\zaiz\Desktop\InternetBaking\API-Restaurant\StockApp.Infrastucture.Persistence\obj\Debug\net6.0\refint\StockApp.Infrastucture.Persistence.dll
+C:\Users\zaiz\Desktop\InternetBaking\API-Restaurant\StockApp.Infrastucture.Persistence\obj\Debug\net6.0\StockApp.Infrastucture.Persistence.pdb
+C:\Users\zaiz\Desktop\InternetBaking\API-Restaurant\StockApp.Infrastucture.Persistence\obj\Debug\net6.0\ref\StockApp.Infrastucture.Persistence.dll

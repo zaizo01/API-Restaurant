@@ -1,13 +1,10 @@
-﻿using StockApp.Core.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using StockApp.Core.Application.ViewModels.Orders;
+using StockApp.Core.Domain.Entities;
 
 namespace StockApp.Core.Application.Interfaces.Repositories
 {
     public interface ITableRepository : IGenericRepository<Table>
     {
+        List<OrderDetailViewModel> GetAllCustomInclude(int id);
     }
 }

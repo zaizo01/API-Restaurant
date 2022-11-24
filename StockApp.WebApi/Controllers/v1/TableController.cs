@@ -85,7 +85,7 @@ namespace StockApp.WebApi.Controllers.v1
             }
         }
 
-        // falta este
+        
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -98,9 +98,11 @@ namespace StockApp.WebApi.Controllers.v1
                 {
                     return BadRequest();
                 }
-
-                await _TableService.GetTableOrden(id);
-                return NoContent();
+                var existTable = await _TableService.GetByIdSaveViewModel(id);
+                if (existTable is null) return NotFound("No existe la mesa.");
+                var tableOrden =_TableService.GetTableOrden(id);
+                if (tableOrden is null) return NotFound("Esta mesa no tiene ordenes en proceso.");
+                return Ok(tableOrden);
             }
             catch (Exception ex)
             {
@@ -108,7 +110,6 @@ namespace StockApp.WebApi.Controllers.v1
             }
         }
 
-        // falta este
         [HttpPut]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
