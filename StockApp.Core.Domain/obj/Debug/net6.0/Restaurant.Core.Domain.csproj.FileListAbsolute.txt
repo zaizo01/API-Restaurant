@@ -1,0 +1,12 @@
+C:\Users\zaiz\Desktop\New folder\API-Restaurant\New folder\API-Restaurant\StockApp.Core.Domain\bin\Debug\net6.0\Restaurant.Core.Domain.deps.json
+C:\Users\zaiz\Desktop\New folder\API-Restaurant\New folder\API-Restaurant\StockApp.Core.Domain\bin\Debug\net6.0\Restaurant.Core.Domain.dll
+C:\Users\zaiz\Desktop\New folder\API-Restaurant\New folder\API-Restaurant\StockApp.Core.Domain\bin\Debug\net6.0\Restaurant.Core.Domain.pdb
+C:\Users\zaiz\Desktop\New folder\API-Restaurant\New folder\API-Restaurant\StockApp.Core.Domain\obj\Debug\net6.0\Restaurant.Core.Domain.csproj.AssemblyReference.cache
+C:\Users\zaiz\Desktop\New folder\API-Restaurant\New folder\API-Restaurant\StockApp.Core.Domain\obj\Debug\net6.0\Restaurant.Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zaiz\Desktop\New folder\API-Restaurant\New folder\API-Restaurant\StockApp.Core.Domain\obj\Debug\net6.0\Restaurant.Core.Domain.AssemblyInfoInputs.cache
+C:\Users\zaiz\Desktop\New folder\API-Restaurant\New folder\API-Restaurant\StockApp.Core.Domain\obj\Debug\net6.0\Restaurant.Core.Domain.AssemblyInfo.cs
+C:\Users\zaiz\Desktop\New folder\API-Restaurant\New folder\API-Restaurant\StockApp.Core.Domain\obj\Debug\net6.0\Restaurant.Core.Domain.csproj.CoreCompileInputs.cache
+C:\Users\zaiz\Desktop\New folder\API-Restaurant\New folder\API-Restaurant\StockApp.Core.Domain\obj\Debug\net6.0\Restaurant.Core.Domain.dll
+C:\Users\zaiz\Desktop\New folder\API-Restaurant\New folder\API-Restaurant\StockApp.Core.Domain\obj\Debug\net6.0\refint\Restaurant.Core.Domain.dll
+C:\Users\zaiz\Desktop\New folder\API-Restaurant\New folder\API-Restaurant\StockApp.Core.Domain\obj\Debug\net6.0\Restaurant.Core.Domain.pdb
+C:\Users\zaiz\Desktop\New folder\API-Restaurant\New folder\API-Restaurant\StockApp.Core.Domain\obj\Debug\net6.0\ref\Restaurant.Core.Domain.dll

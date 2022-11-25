@@ -1,13 +1,13 @@
-﻿using StockApp.Core.Application.ViewModels.Dishes;
-using StockApp.Core.Application.ViewModels.Orders;
-using StockApp.Core.Application.ViewModels.Tables;
+﻿using Restaurant.Core.Application.ViewModels.Dishes;
+using Restaurant.Core.Application.ViewModels.Orders;
+using Restaurant.Core.Application.ViewModels.Tables;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StockApp.Core.Application.ViewModels.OrderTableDish
+namespace Restaurant.Core.Application.ViewModels.OrderTableDish
 {
     public class SaveOrderTableDishViewModel
     {

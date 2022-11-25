@@ -1,17 +1,17 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using StockApp.Core.Application.Interfaces.Repositories;
-using StockApp.Core.Application.ViewModels.Dishes;
-using StockApp.Core.Application.ViewModels.Orders;
-using StockApp.Core.Domain.Entities;
-using StockApp.Infrastructure.Persistence.Contexts;
-using StockApp.Infrastructure.Persistence.Repository;
+using Restaurant.Core.Application.Interfaces.Repositories;
+using Restaurant.Core.Application.ViewModels.Dishes;
+using Restaurant.Core.Application.ViewModels.Orders;
+using Restaurant.Core.Domain.Entities;
+using Restaurant.Infrastructure.Persistence.Contexts;
+using Restaurant.Infrastructure.Persistence.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StockApp.Infrastucture.Persistence.Repositories
+namespace Restaurant.Infrastucture.Persistence.Repositories
 {
     public class OrderRepository : GenericRepository<Order>, IOrderRepository
     {

@@ -1,7 +1,7 @@
-﻿using StockApp.Core.Domain.Common;
-using StockApp.Core.Domain.Enums;
+﻿using Restaurant.Core.Domain.Common;
+using Restaurant.Core.Domain.Enums;
 
-namespace StockApp.Core.Domain.Entities
+namespace Restaurant.Core.Domain.Entities
 {
     public class Order: AuditableBaseEntity
     {

@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using StockApp.Infrastructure.Identity.Entities;
+using Restaurant.Infrastructure.Identity.Entities;
 
-namespace StockApp.Infrastructure.Persistence.Contexts
+namespace Restaurant.Infrastructure.Persistence.Contexts
 {
     public class IdentityContext : IdentityDbContext<ApplicationUser>
     {

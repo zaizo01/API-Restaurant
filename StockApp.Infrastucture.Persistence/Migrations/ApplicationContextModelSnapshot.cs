@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using StockApp.Infrastructure.Persistence.Contexts;
+using Restaurant.Infrastructure.Persistence.Contexts;
 
 #nullable disable
 
-namespace StockApp.Infrastucture.Persistence.Migrations
+namespace Restaurant.Infrastucture.Persistence.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
     partial class ApplicationContextModelSnapshot : ModelSnapshot
@@ -22,7 +22,7 @@ namespace StockApp.Infrastucture.Persistence.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("StockApp.Core.Domain.Entities.Dish", b =>
+            modelBuilder.Entity("Restaurant.Core.Domain.Entities.Dish", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -65,7 +65,7 @@ namespace StockApp.Infrastucture.Persistence.Migrations
                     b.ToTable("Dishs");
                 });
 
-            modelBuilder.Entity("StockApp.Core.Domain.Entities.DishIngredient", b =>
+            modelBuilder.Entity("Restaurant.Core.Domain.Entities.DishIngredient", b =>
                 {
                     b.Property<int>("DishId")
                         .HasColumnType("int");
@@ -80,7 +80,7 @@ namespace StockApp.Infrastucture.Persistence.Migrations
                     b.ToTable("DishIngredient");
                 });
 
-            modelBuilder.Entity("StockApp.Core.Domain.Entities.Ingredient", b =>
+            modelBuilder.Entity("Restaurant.Core.Domain.Entities.Ingredient", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -114,7 +114,7 @@ namespace StockApp.Infrastucture.Persistence.Migrations
                     b.ToTable("Ingredients");
                 });
 
-            modelBuilder.Entity("StockApp.Core.Domain.Entities.Order", b =>
+            modelBuilder.Entity("Restaurant.Core.Domain.Entities.Order", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -150,7 +150,7 @@ namespace StockApp.Infrastucture.Persistence.Migrations
                     b.ToTable("Orders");
                 });
 
-            modelBuilder.Entity("StockApp.Core.Domain.Entities.OrderTableDish", b =>
+            modelBuilder.Entity("Restaurant.Core.Domain.Entities.OrderTableDish", b =>
                 {
                     b.Property<int>("OrderId")
                         .HasColumnType("int");
@@ -170,7 +170,7 @@ namespace StockApp.Infrastucture.Persistence.Migrations
                     b.ToTable("OrderTableDishs");
                 });
 
-            modelBuilder.Entity("StockApp.Core.Domain.Entities.Table", b =>
+            modelBuilder.Entity("Restaurant.Core.Domain.Entities.Table", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -207,22 +207,22 @@ namespace StockApp.Infrastucture.Persistence.Migrations
                     b.ToTable("Tables");
                 });
 
-            modelBuilder.Entity("StockApp.Core.Domain.Entities.Dish", b =>
+            modelBuilder.Entity("Restaurant.Core.Domain.Entities.Dish", b =>
                 {
-                    b.HasOne("StockApp.Core.Domain.Entities.Order", null)
+                    b.HasOne("Restaurant.Core.Domain.Entities.Order", null)
                         .WithMany("Dishes")
                         .HasForeignKey("OrderId");
                 });
 
-            modelBuilder.Entity("StockApp.Core.Domain.Entities.DishIngredient", b =>
+            modelBuilder.Entity("Restaurant.Core.Domain.Entities.DishIngredient", b =>
                 {
-                    b.HasOne("StockApp.Core.Domain.Entities.Dish", "Dish")
+                    b.HasOne("Restaurant.Core.Domain.Entities.Dish", "Dish")
                         .WithMany()
                         .HasForeignKey("DishId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("StockApp.Core.Domain.Entities.Ingredient", "Ingredient")
+                    b.HasOne("Restaurant.Core.Domain.Entities.Ingredient", "Ingredient")
                         .WithMany()
                         .HasForeignKey("IngredientId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -233,16 +233,16 @@ namespace StockApp.Infrastucture.Persistence.Migrations
                     b.Navigation("Ingredient");
                 });
 
-            modelBuilder.Entity("StockApp.Core.Domain.Entities.Ingredient", b =>
+            modelBuilder.Entity("Restaurant.Core.Domain.Entities.Ingredient", b =>
                 {
-                    b.HasOne("StockApp.Core.Domain.Entities.Dish", null)
+                    b.HasOne("Restaurant.Core.Domain.Entities.Dish", null)
                         .WithMany("Ingredients")
                         .HasForeignKey("DishId");
                 });
 
-            modelBuilder.Entity("StockApp.Core.Domain.Entities.Order", b =>
+            modelBuilder.Entity("Restaurant.Core.Domain.Entities.Order", b =>
                 {
-                    b.HasOne("StockApp.Core.Domain.Entities.Table", "Table")
+                    b.HasOne("Restaurant.Core.Domain.Entities.Table", "Table")
                         .WithMany("Orders")
                         .HasForeignKey("TableId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -251,21 +251,21 @@ namespace StockApp.Infrastucture.Persistence.Migrations
                     b.Navigation("Table");
                 });
 
-            modelBuilder.Entity("StockApp.Core.Domain.Entities.OrderTableDish", b =>
+            modelBuilder.Entity("Restaurant.Core.Domain.Entities.OrderTableDish", b =>
                 {
-                    b.HasOne("StockApp.Core.Domain.Entities.Dish", "Dish")
+                    b.HasOne("Restaurant.Core.Domain.Entities.Dish", "Dish")
                         .WithMany("OrderTableDishs")
                         .HasForeignKey("DishId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
-                    b.HasOne("StockApp.Core.Domain.Entities.Order", "Order")
+                    b.HasOne("Restaurant.Core.Domain.Entities.Order", "Order")
                         .WithMany("OrderTableDishs")
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
-                    b.HasOne("StockApp.Core.Domain.Entities.Table", "Table")
+                    b.HasOne("Restaurant.Core.Domain.Entities.Table", "Table")
                         .WithMany("OrderTableDishs")
                         .HasForeignKey("TableId")
                         .OnDelete(DeleteBehavior.NoAction)
@@ -278,21 +278,21 @@ namespace StockApp.Infrastucture.Persistence.Migrations
                     b.Navigation("Table");
                 });
 
-            modelBuilder.Entity("StockApp.Core.Domain.Entities.Dish", b =>
+            modelBuilder.Entity("Restaurant.Core.Domain.Entities.Dish", b =>
                 {
                     b.Navigation("Ingredients");
 
                     b.Navigation("OrderTableDishs");
                 });
 
-            modelBuilder.Entity("StockApp.Core.Domain.Entities.Order", b =>
+            modelBuilder.Entity("Restaurant.Core.Domain.Entities.Order", b =>
                 {
                     b.Navigation("Dishes");
 
                     b.Navigation("OrderTableDishs");
                 });
 
-            modelBuilder.Entity("StockApp.Core.Domain.Entities.Table", b =>
+            modelBuilder.Entity("Restaurant.Core.Domain.Entities.Table", b =>
                 {
                     b.Navigation("OrderTableDishs");
 

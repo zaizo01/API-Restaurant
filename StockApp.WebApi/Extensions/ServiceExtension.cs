@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 
-namespace StockApp.WebApi.Extensions
+namespace Restaurant.WebApi.Extensions
 {
     public static class ServiceExtension
     {
@@ -20,13 +20,13 @@ namespace StockApp.WebApi.Extensions
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "StockApp API",
+                    Title = "Restaurant API",
                     Description = "This Api will be responsible for overall data distribution",
                     Contact = new OpenApiContact
                     {
-                        Name = "Leonardo Tavarez",
-                        Email = "ltavarezitla.edu.do",
-                        Url = new Uri("https://www.itla.edu.do")
+                        Name = "Cristopher Zaiz Ortega",
+                        Email = "e.zaizortega@gmail.com",
+                        Url = new Uri("https://czaiz.com")
                     }
                 });
 

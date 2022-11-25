@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using StockApp.Core.Application.Interfaces.Services;
-using StockApp.Core.Application.ViewModels.Orders;
+using Restaurant.Core.Application.Interfaces.Services;
+using Restaurant.Core.Application.ViewModels.Orders;
 
-namespace StockApp.WebApi.Controllers.v1
+namespace Restaurant.WebApi.Controllers.v1
 {
     [Route("api/[controller]/[action]")]
     [ApiController]

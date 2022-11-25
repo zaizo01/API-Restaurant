@@ -3486,7 +3486,7 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "StockApp.Core.Application/1.0.0": {
+      "Restaurant.Core.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -3500,26 +3500,26 @@
           "Microsoft.EntityFrameworkCore": "6.0.9",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "6.0.0",
           "Newtonsoft.Json": "13.0.1",
-          "StockApp.Core.Domain": "1.0.0"
+          "Restaurant.Core.Domain": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/StockApp.Core.Application.dll": {}
+          "bin/placeholder/Restaurant.Core.Application.dll": {}
         },
         "runtime": {
-          "bin/placeholder/StockApp.Core.Application.dll": {}
+          "bin/placeholder/Restaurant.Core.Application.dll": {}
         }
       },
-      "StockApp.Core.Domain/1.0.0": {
+      "Restaurant.Core.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/StockApp.Core.Domain.dll": {}
+          "bin/placeholder/Restaurant.Core.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/StockApp.Core.Domain.dll": {}
+          "bin/placeholder/Restaurant.Core.Domain.dll": {}
         }
       },
-      "StockApp.Infrastructure.Identity/1.0.0": {
+      "Restaurant.Infrastructure.Identity/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -3531,49 +3531,49 @@
           "Microsoft.Extensions.DependencyInjection": "6.0.1",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "6.0.0",
           "MimeKit": "3.4.2",
-          "StockApp.Core.Application": "1.0.0",
-          "StockApp.Core.Domain": "1.0.0",
-          "StockApp.Infrastructure.Shared": "1.0.0"
+          "Restaurant.Core.Application": "1.0.0",
+          "Restaurant.Core.Domain": "1.0.0",
+          "Restaurant.Infrastructure.Shared": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/StockApp.Infrastructure.Identity.dll": {}
+          "bin/placeholder/Restaurant.Infrastructure.Identity.dll": {}
         },
         "runtime": {
-          "bin/placeholder/StockApp.Infrastructure.Identity.dll": {}
+          "bin/placeholder/Restaurant.Infrastructure.Identity.dll": {}
         }
       },
-      "StockApp.Infrastructure.Shared/1.0.0": {
+      "Restaurant.Infrastructure.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "MailKit": "3.4.1",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "6.0.0",
           "MimeKit": "3.4.1",
-          "StockApp.Core.Application": "1.0.0",
-          "StockApp.Core.Domain": "1.0.0"
+          "Restaurant.Core.Application": "1.0.0",
+          "Restaurant.Core.Domain": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/StockApp.Infrastructure.Shared.dll": {}
+          "bin/placeholder/Restaurant.Infrastructure.Shared.dll": {}
         },
         "runtime": {
-          "bin/placeholder/StockApp.Infrastructure.Shared.dll": {}
+          "bin/placeholder/Restaurant.Infrastructure.Shared.dll": {}
         }
       },
-      "StockApp.Infrastucture.Persistence/1.0.0": {
+      "Restaurant.Infrastucture.Persistence/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.InMemory": "6.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.9",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "6.0.0",
-          "StockApp.Core.Application": "1.0.0",
-          "StockApp.Core.Domain": "1.0.0"
+          "Restaurant.Core.Application": "1.0.0",
+          "Restaurant.Core.Domain": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/StockApp.Infrastucture.Persistence.dll": {}
+          "bin/placeholder/Restaurant.Infrastucture.Persistence.dll": {}
         },
         "runtime": {
-          "bin/placeholder/StockApp.Infrastucture.Persistence.dll": {}
+          "bin/placeholder/Restaurant.Infrastucture.Persistence.dll": {}
         }
       }
     }
@@ -10789,30 +10789,30 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "StockApp.Core.Application/1.0.0": {
+    "Restaurant.Core.Application/1.0.0": {
       "type": "project",
-      "path": "../Application/StockApp.Core.Application.csproj",
-      "msbuildProject": "../Application/StockApp.Core.Application.csproj"
+      "path": "../Application/Restaurant.Core.Application.csproj",
+      "msbuildProject": "../Application/Restaurant.Core.Application.csproj"
     },
-    "StockApp.Core.Domain/1.0.0": {
+    "Restaurant.Core.Domain/1.0.0": {
       "type": "project",
-      "path": "../StockApp.Core.Domain/StockApp.Core.Domain.csproj",
-      "msbuildProject": "../StockApp.Core.Domain/StockApp.Core.Domain.csproj"
+      "path": "../StockApp.Core.Domain/Restaurant.Core.Domain.csproj",
+      "msbuildProject": "../StockApp.Core.Domain/Restaurant.Core.Domain.csproj"
     },
-    "StockApp.Infrastructure.Identity/1.0.0": {
+    "Restaurant.Infrastructure.Identity/1.0.0": {
       "type": "project",
-      "path": "../StockApp.Infrastructure.Identity/StockApp.Infrastructure.Identity.csproj",
-      "msbuildProject": "../StockApp.Infrastructure.Identity/StockApp.Infrastructure.Identity.csproj"
+      "path": "../StockApp.Infrastructure.Identity/Restaurant.Infrastructure.Identity.csproj",
+      "msbuildProject": "../StockApp.Infrastructure.Identity/Restaurant.Infrastructure.Identity.csproj"
     },
-    "StockApp.Infrastructure.Shared/1.0.0": {
+    "Restaurant.Infrastructure.Shared/1.0.0": {
       "type": "project",
-      "path": "../StockApp.Infrastructure.Shared/StockApp.Infrastructure.Shared.csproj",
-      "msbuildProject": "../StockApp.Infrastructure.Shared/StockApp.Infrastructure.Shared.csproj"
+      "path": "../StockApp.Infrastructure.Shared/Restaurant.Infrastructure.Shared.csproj",
+      "msbuildProject": "../StockApp.Infrastructure.Shared/Restaurant.Infrastructure.Shared.csproj"
     },
-    "StockApp.Infrastucture.Persistence/1.0.0": {
+    "Restaurant.Infrastucture.Persistence/1.0.0": {
       "type": "project",
-      "path": "../StockApp.Infrastucture.Persistence/StockApp.Infrastucture.Persistence.csproj",
-      "msbuildProject": "../StockApp.Infrastucture.Persistence/StockApp.Infrastucture.Persistence.csproj"
+      "path": "../StockApp.Infrastucture.Persistence/Restaurant.Infrastucture.Persistence.csproj",
+      "msbuildProject": "../StockApp.Infrastucture.Persistence/Restaurant.Infrastucture.Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10821,29 +10821,34 @@
       "Microsoft.AspNetCore.Mvc.Versioning >= 5.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.10",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.10",
-      "StockApp.Core.Application >= 1.0.0",
-      "StockApp.Core.Domain >= 1.0.0",
-      "StockApp.Infrastructure.Identity >= 1.0.0",
-      "StockApp.Infrastructure.Shared >= 1.0.0",
-      "StockApp.Infrastucture.Persistence >= 1.0.0",
+      "Restaurant.Core.Application >= 1.0.0",
+      "Restaurant.Core.Domain >= 1.0.0",
+      "Restaurant.Infrastructure.Identity >= 1.0.0",
+      "Restaurant.Infrastructure.Shared >= 1.0.0",
+      "Restaurant.Infrastucture.Persistence >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0",
       "Swashbuckle.AspNetCore.Swagger >= 6.4.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\czaiz\\.nuget\\packages\\": {}
+    "C:\\Users\\zaiz\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.WebApi\\StockApp.WebApi.csproj",
-      "projectName": "StockApp.WebApi",
-      "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.WebApi\\StockApp.WebApi.csproj",
-      "packagesPath": "C:\\Users\\czaiz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.WebApi\\obj\\",
+      "projectUniqueName": "C:\\Users\\zaiz\\Desktop\\New folder\\API-Restaurant\\New folder\\API-Restaurant\\StockApp.WebApi\\Restaurant.WebApi.csproj",
+      "projectName": "Restaurant.WebApi",
+      "projectPath": "C:\\Users\\zaiz\\Desktop\\New folder\\API-Restaurant\\New folder\\API-Restaurant\\StockApp.WebApi\\Restaurant.WebApi.csproj",
+      "packagesPath": "C:\\Users\\zaiz\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\zaiz\\Desktop\\New folder\\API-Restaurant\\New folder\\API-Restaurant\\StockApp.WebApi\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\czaiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\zaiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10857,20 +10862,20 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\Application\\StockApp.Core.Application.csproj": {
-              "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\Application\\StockApp.Core.Application.csproj"
+            "C:\\Users\\zaiz\\Desktop\\New folder\\API-Restaurant\\New folder\\API-Restaurant\\Application\\Restaurant.Core.Application.csproj": {
+              "projectPath": "C:\\Users\\zaiz\\Desktop\\New folder\\API-Restaurant\\New folder\\API-Restaurant\\Application\\Restaurant.Core.Application.csproj"
             },
-            "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj": {
-              "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj"
+            "C:\\Users\\zaiz\\Desktop\\New folder\\API-Restaurant\\New folder\\API-Restaurant\\StockApp.Core.Domain\\Restaurant.Core.Domain.csproj": {
+              "projectPath": "C:\\Users\\zaiz\\Desktop\\New folder\\API-Restaurant\\New folder\\API-Restaurant\\StockApp.Core.Domain\\Restaurant.Core.Domain.csproj"
             },
-            "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastructure.Identity\\StockApp.Infrastructure.Identity.csproj": {
-              "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastructure.Identity\\StockApp.Infrastructure.Identity.csproj"
+            "C:\\Users\\zaiz\\Desktop\\New folder\\API-Restaurant\\New folder\\API-Restaurant\\StockApp.Infrastructure.Identity\\Restaurant.Infrastructure.Identity.csproj": {
+              "projectPath": "C:\\Users\\zaiz\\Desktop\\New folder\\API-Restaurant\\New folder\\API-Restaurant\\StockApp.Infrastructure.Identity\\Restaurant.Infrastructure.Identity.csproj"
             },
-            "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastructure.Shared\\StockApp.Infrastructure.Shared.csproj": {
-              "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastructure.Shared\\StockApp.Infrastructure.Shared.csproj"
+            "C:\\Users\\zaiz\\Desktop\\New folder\\API-Restaurant\\New folder\\API-Restaurant\\StockApp.Infrastructure.Shared\\Restaurant.Infrastructure.Shared.csproj": {
+              "projectPath": "C:\\Users\\zaiz\\Desktop\\New folder\\API-Restaurant\\New folder\\API-Restaurant\\StockApp.Infrastructure.Shared\\Restaurant.Infrastructure.Shared.csproj"
             },
-            "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastucture.Persistence\\StockApp.Infrastucture.Persistence.csproj": {
-              "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastucture.Persistence\\StockApp.Infrastucture.Persistence.csproj"
+            "C:\\Users\\zaiz\\Desktop\\New folder\\API-Restaurant\\New folder\\API-Restaurant\\StockApp.Infrastucture.Persistence\\Restaurant.Infrastucture.Persistence.csproj": {
+              "projectPath": "C:\\Users\\zaiz\\Desktop\\New folder\\API-Restaurant\\New folder\\API-Restaurant\\StockApp.Infrastucture.Persistence\\Restaurant.Infrastucture.Persistence.csproj"
             }
           }
         }
@@ -10930,7 +10935,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

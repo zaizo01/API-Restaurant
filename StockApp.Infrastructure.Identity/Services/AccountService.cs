@@ -2,12 +2,12 @@
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using StockApp.Core.Application.Dtos.Account;
-using StockApp.Core.Application.Enums;
-using StockApp.Core.Application.Interfaces.Services;
-using StockApp.Core.Application.ViewModels.User;
-using StockApp.Core.Domain.Settings;
-using StockApp.Infrastructure.Identity.Entities;
+using Restaurant.Core.Application.Dtos.Account;
+using Restaurant.Core.Application.Enums;
+using Restaurant.Core.Application.Interfaces.Services;
+using Restaurant.Core.Application.ViewModels.User;
+using Restaurant.Core.Domain.Settings;
+using Restaurant.Infrastructure.Identity.Entities;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
@@ -17,7 +17,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StockApp.Infrastructure.Identity.Services
+namespace Restaurant.Infrastructure.Identity.Services
 {
     public class AccountService : IAccountService
     {

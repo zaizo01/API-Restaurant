@@ -1,9 +1,9 @@
-﻿using StockApp.Core.Application.Dtos.Account;
-using StockApp.Core.Application.Enums;
-using StockApp.Core.Application.ViewModels.User;
+﻿using Restaurant.Core.Application.Dtos.Account;
+using Restaurant.Core.Application.Enums;
+using Restaurant.Core.Application.ViewModels.User;
 using System.Threading.Tasks;
 
-namespace StockApp.Core.Application.Interfaces.Services
+namespace Restaurant.Core.Application.Interfaces.Services
 {
     public interface IUserService
     {

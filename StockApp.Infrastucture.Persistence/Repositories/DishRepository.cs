@@ -1,14 +1,14 @@
-﻿using StockApp.Core.Application.Interfaces.Repositories;
-using StockApp.Core.Domain.Entities;
-using StockApp.Infrastructure.Persistence.Contexts;
-using StockApp.Infrastructure.Persistence.Repository;
+﻿using Restaurant.Core.Application.Interfaces.Repositories;
+using Restaurant.Core.Domain.Entities;
+using Restaurant.Infrastructure.Persistence.Contexts;
+using Restaurant.Infrastructure.Persistence.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StockApp.Infrastucture.Persistence.Repositories
+namespace Restaurant.Infrastucture.Persistence.Repositories
 {
     public class DishRepository : GenericRepository<Dish>, IDishRepository
     {

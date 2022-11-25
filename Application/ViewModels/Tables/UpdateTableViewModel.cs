@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StockApp.Core.Application.ViewModels.Tables
+namespace Restaurant.Core.Application.ViewModels.Tables
 {
     public class UpdateTableViewModel
     {

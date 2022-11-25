@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StockApp.Core.Domain.Enums
+namespace Restaurant.Core.Domain.Enums
 {
     public enum CategoryDish
     {

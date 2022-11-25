@@ -2,13 +2,13 @@
 using MailKit.Security;
 using Microsoft.Extensions.Options;
 using MimeKit;
-using StockApp.Core.Application.DTOs.Email;
-using StockApp.Core.Application.Interfaces.Services;
-using StockApp.Core.Domain.Settings;
+using Restaurant.Core.Application.DTOs.Email;
+using Restaurant.Core.Application.Interfaces.Services;
+using Restaurant.Core.Domain.Settings;
 using System;
 using System.Threading.Tasks;
 
-namespace StockApp.Infrastructure.Shared.Services
+namespace Restaurant.Infrastructure.Shared.Services
 {
     public class EmailService : IEmailService
     {

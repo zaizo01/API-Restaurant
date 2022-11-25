@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace StockApp.Core.Domain.Settings
+namespace Restaurant.Core.Domain.Settings
 {
     public class MailSettings
     {

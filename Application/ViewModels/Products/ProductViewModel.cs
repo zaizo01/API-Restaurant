@@ -1,12 +1,12 @@
-﻿using StockApp.Core.Application.ViewModels.Categories;
-using StockApp.Core.Application.ViewModels.User;
+﻿using Restaurant.Core.Application.ViewModels.Categories;
+using Restaurant.Core.Application.ViewModels.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StockApp.Core.Application.ViewModels.Products
+namespace Restaurant.Core.Application.ViewModels.Products
 {
     public class ProductViewModel
     {

@@ -1,6 +1,6 @@
-﻿using StockApp.Core.Application.ViewModels.Ingredients;
-using StockApp.Core.Domain.Entities;
-using StockApp.Core.Domain.Enums;
+﻿using Restaurant.Core.Application.ViewModels.Ingredients;
+using Restaurant.Core.Domain.Entities;
+using Restaurant.Core.Domain.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StockApp.Core.Application.ViewModels.Dishes
+namespace Restaurant.Core.Application.ViewModels.Dishes
 {
     public class SaveDishViewModel
     {

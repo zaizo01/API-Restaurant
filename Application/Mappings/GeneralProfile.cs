@@ -1,22 +1,22 @@
 ﻿using AutoMapper;
-using StockApp.Core.Application.Dtos.Account;
-using StockApp.Core.Application.ViewModels.Categories;
-using StockApp.Core.Application.ViewModels.Dishes;
-using StockApp.Core.Application.ViewModels.DishIngredient;
-using StockApp.Core.Application.ViewModels.Ingredients;
-using StockApp.Core.Application.ViewModels.Orders;
-using StockApp.Core.Application.ViewModels.OrderTableDish;
-using StockApp.Core.Application.ViewModels.Products;
-using StockApp.Core.Application.ViewModels.Tables;
-using StockApp.Core.Application.ViewModels.User;
-using StockApp.Core.Domain.Entities;
+using Restaurant.Core.Application.Dtos.Account;
+using Restaurant.Core.Application.ViewModels.Categories;
+using Restaurant.Core.Application.ViewModels.Dishes;
+using Restaurant.Core.Application.ViewModels.DishIngredient;
+using Restaurant.Core.Application.ViewModels.Ingredients;
+using Restaurant.Core.Application.ViewModels.Orders;
+using Restaurant.Core.Application.ViewModels.OrderTableDish;
+using Restaurant.Core.Application.ViewModels.Products;
+using Restaurant.Core.Application.ViewModels.Tables;
+using Restaurant.Core.Application.ViewModels.User;
+using Restaurant.Core.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StockApp.Core.Application.Mappings
+namespace Restaurant.Core.Application.Mappings
 {
     public class GeneralProfile : Profile
     {

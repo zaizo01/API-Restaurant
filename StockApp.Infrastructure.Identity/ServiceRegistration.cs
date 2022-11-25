@@ -6,16 +6,16 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
-using StockApp.Core.Application.Dtos.Account;
-using StockApp.Core.Application.Interfaces.Repositories;
-using StockApp.Core.Application.Interfaces.Services;
-using StockApp.Core.Domain.Settings;
-using StockApp.Infrastructure.Identity.Entities;
-using StockApp.Infrastructure.Identity.Services;
-using StockApp.Infrastructure.Persistence.Contexts;
+using Restaurant.Core.Application.Dtos.Account;
+using Restaurant.Core.Application.Interfaces.Repositories;
+using Restaurant.Core.Application.Interfaces.Services;
+using Restaurant.Core.Domain.Settings;
+using Restaurant.Infrastructure.Identity.Entities;
+using Restaurant.Infrastructure.Identity.Services;
+using Restaurant.Infrastructure.Persistence.Contexts;
 using System.Text;
 
-namespace StockApp.Infrastructure.Identity
+namespace Restaurant.Infrastructure.Identity
 {
     //Extension Method - Decorator
     public static class ServiceRegistration

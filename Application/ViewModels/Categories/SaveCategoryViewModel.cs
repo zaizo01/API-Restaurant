@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StockApp.Core.Application.ViewModels.Categories
+namespace Restaurant.Core.Application.ViewModels.Categories
 {
     public class SaveCategoryViewModel
     {

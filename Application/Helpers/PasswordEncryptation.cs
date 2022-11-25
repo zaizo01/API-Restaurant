@@ -1,7 +1,7 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
 
-namespace StockApp.Core.Application.Helpers
+namespace Restaurant.Core.Application.Helpers
 {
     public class PasswordEncryptation
     {

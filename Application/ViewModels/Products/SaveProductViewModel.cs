@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
-using StockApp.Core.Application.ViewModels.Categories;
+using Restaurant.Core.Application.ViewModels.Categories;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StockApp.Core.Application.ViewModels.Products
+namespace Restaurant.Core.Application.ViewModels.Products
 {
     public class SaveProductViewModel
     {

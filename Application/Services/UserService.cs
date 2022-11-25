@@ -1,16 +1,16 @@
 ﻿using AutoMapper;
-using StockApp.Core.Application.Dtos.Account;
-using StockApp.Core.Application.DTOs.Email;
-using StockApp.Core.Application.Enums;
-using StockApp.Core.Application.Interfaces.Repositories;
-using StockApp.Core.Application.Interfaces.Services;
-using StockApp.Core.Application.ViewModels.User;
-using StockApp.Core.Domain.Entities;
+using Restaurant.Core.Application.Dtos.Account;
+using Restaurant.Core.Application.DTOs.Email;
+using Restaurant.Core.Application.Enums;
+using Restaurant.Core.Application.Interfaces.Repositories;
+using Restaurant.Core.Application.Interfaces.Services;
+using Restaurant.Core.Application.ViewModels.User;
+using Restaurant.Core.Domain.Entities;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace StockApp.Core.Application.Services
+namespace Restaurant.Core.Application.Services
 {
     public class UserService : IUserService
     {

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace StockApp.Infrastucture.Persistence.Migrations
+namespace Restaurant.Infrastucture.Persistence.Migrations
 {
     public partial class init : Migration
     {

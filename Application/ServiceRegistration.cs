@@ -1,11 +1,11 @@
-﻿using StockApp.Core.Application.Services;
+﻿using Restaurant.Core.Application.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using StockApp.Core.Application.Interfaces.Repositories;
-using StockApp.Core.Application.Interfaces.Services;
+using Restaurant.Core.Application.Interfaces.Repositories;
+using Restaurant.Core.Application.Interfaces.Services;
 using System.Reflection;
 
-namespace StockApp.Core.Application
+namespace Restaurant.Core.Application
 {
 
     //Extension Method - Decorator

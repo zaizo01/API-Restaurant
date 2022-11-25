@@ -1,11 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using StockApp.Core.Application.Interfaces.Repositories;
-using StockApp.Infrastructure.Persistence.Contexts;
+using Restaurant.Core.Application.Interfaces.Repositories;
+using Restaurant.Infrastructure.Persistence.Contexts;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace StockApp.Infrastructure.Persistence.Repository
+namespace Restaurant.Infrastructure.Persistence.Repository
 {
     //Generics
     public class GenericRepository<Entity> : IGenericRepository<Entity> where Entity : class

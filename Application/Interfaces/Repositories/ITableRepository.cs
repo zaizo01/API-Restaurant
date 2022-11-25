@@ -1,7 +1,7 @@
-﻿using StockApp.Core.Application.ViewModels.Orders;
-using StockApp.Core.Domain.Entities;
+﻿using Restaurant.Core.Application.ViewModels.Orders;
+using Restaurant.Core.Domain.Entities;
 
-namespace StockApp.Core.Application.Interfaces.Repositories
+namespace Restaurant.Core.Application.Interfaces.Repositories
 {
     public interface ITableRepository : IGenericRepository<Table>
     {

@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using StockApp.Core.Application.Enums;
-using StockApp.Infrastructure.Identity.Entities;
+using Restaurant.Core.Application.Enums;
+using Restaurant.Infrastructure.Identity.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StockApp.Infrastructure.Identity.Seeds
+namespace Restaurant.Infrastructure.Identity.Seeds
 {
     public static class DefaultRoles
     {

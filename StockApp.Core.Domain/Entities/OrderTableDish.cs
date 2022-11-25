@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StockApp.Core.Domain.Entities
+namespace Restaurant.Core.Domain.Entities
 {
     public class OrderTableDish
     {

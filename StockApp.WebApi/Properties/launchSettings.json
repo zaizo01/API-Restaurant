@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "StockApp.WebApi": {
+    "Restaurant.WebApi": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

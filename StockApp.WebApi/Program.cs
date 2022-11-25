@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.Identity;
-using StockApp.Core.Application;
-using StockApp.Infrastructure.Identity;
-using StockApp.Infrastructure.Identity.Entities;
-using StockApp.Infrastructure.Persistence;
-using StockApp.Infrastructure.Identity.Seeds;
-using StockApp.Infrastructure.Shared;
-using StockApp.WebApi.Extensions;
+using Restaurant.Core.Application;
+using Restaurant.Infrastructure.Identity;
+using Restaurant.Infrastructure.Identity.Entities;
+using Restaurant.Infrastructure.Persistence;
+using Restaurant.Infrastructure.Identity.Seeds;
+using Restaurant.Infrastructure.Shared;
+using Restaurant.WebApi.Extensions;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -27,7 +27,7 @@ builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession();
 builder.Services.AddAuthorization(opt =>
 {
-    opt.AddPolicy("RequireAdminAndWaiterOnly", policy => policy.RequireRole("Admin","Waiter"));
+    opt.AddPolicy("RequireAdminAndWaiterOnly", policy => policy.RequireRole("SuperAdmin", "Admin","Waiter"));
 });
 builder.Services.AddControllers().AddJsonOptions(x =>
 x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);

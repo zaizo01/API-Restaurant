@@ -1,16 +1,16 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Http;
-using StockApp.Core.Application.Helpers;
-using StockApp.Core.Application.Interfaces.Repositories;
-using StockApp.Core.Application.Interfaces.Services;
-using StockApp.Core.Application.ViewModels.Products;
-using StockApp.Core.Application.ViewModels.User;
-using StockApp.Core.Domain.Entities;
+using Restaurant.Core.Application.Helpers;
+using Restaurant.Core.Application.Interfaces.Repositories;
+using Restaurant.Core.Application.Interfaces.Services;
+using Restaurant.Core.Application.ViewModels.Products;
+using Restaurant.Core.Application.ViewModels.User;
+using Restaurant.Core.Domain.Entities;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace StockApp.Core.Application.Services
+namespace Restaurant.Core.Application.Services
 {
     public class GenericService<SaveViewModel,ViewModel,Model> : IGenericService<SaveViewModel, ViewModel, Model>
          where SaveViewModel : class

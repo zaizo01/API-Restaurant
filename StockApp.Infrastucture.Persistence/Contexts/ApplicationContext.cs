@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using StockApp.Core.Domain.Common;
-using StockApp.Core.Domain.Entities;
+using Restaurant.Core.Domain.Common;
+using Restaurant.Core.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace StockApp.Infrastructure.Persistence.Contexts
+namespace Restaurant.Infrastructure.Persistence.Contexts
 {
     public class ApplicationContext : DbContext
     {

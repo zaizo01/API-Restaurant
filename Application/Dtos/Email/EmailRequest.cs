@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace StockApp.Core.Application.DTOs.Email
+namespace Restaurant.Core.Application.DTOs.Email
 {
     public class EmailRequest
     {

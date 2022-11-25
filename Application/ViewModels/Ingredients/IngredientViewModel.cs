@@ -1,11 +1,11 @@
-﻿using StockApp.Core.Application.ViewModels.Dishes;
+﻿using Restaurant.Core.Application.ViewModels.Dishes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StockApp.Core.Application.ViewModels.Ingredients
+namespace Restaurant.Core.Application.ViewModels.Ingredients
 {
     public class IngredientViewModel
     {

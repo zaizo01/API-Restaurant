@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
 
-namespace StockApp.WebApi.Extensions
+namespace Restaurant.WebApi.Extensions
 {
     public static class AppExtensions
     {
@@ -9,7 +9,7 @@ namespace StockApp.WebApi.Extensions
             app.UseSwagger();
             app.UseSwaggerUI(options =>
             {
-                options.SwaggerEndpoint("/swagger/v1/swagger.json", "StockApp API");
+                options.SwaggerEndpoint("/swagger/v1/swagger.json", "Restaurant API");
             });
         }
     }

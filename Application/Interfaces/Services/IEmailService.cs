@@ -1,11 +1,11 @@
-﻿using StockApp.Core.Application.DTOs.Email;
-using StockApp.Core.Domain.Settings;
+﻿using Restaurant.Core.Application.DTOs.Email;
+using Restaurant.Core.Domain.Settings;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StockApp.Core.Application.Interfaces.Services
+namespace Restaurant.Core.Application.Interfaces.Services
 {
     public interface IEmailService
     {

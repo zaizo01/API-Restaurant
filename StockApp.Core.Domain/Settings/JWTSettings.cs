@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StockApp.Core.Domain.Settings
+namespace Restaurant.Core.Domain.Settings
 {
     public class JWTSettings
     {

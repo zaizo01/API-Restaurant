@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace StockApp.Core.Application.Dtos.Account
+namespace Restaurant.Core.Application.Dtos.Account
 {
     public class AuthenticationResponse
     {

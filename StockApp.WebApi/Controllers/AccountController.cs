@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using StockApp.Core.Application.Dtos.Account;
-using StockApp.Core.Application.Enums;
-using StockApp.Core.Application.Interfaces.Services;
-using StockApp.Core.Application.ViewModels.User;
+using Restaurant.Core.Application.Dtos.Account;
+using Restaurant.Core.Application.Enums;
+using Restaurant.Core.Application.Interfaces.Services;
+using Restaurant.Core.Application.ViewModels.User;
 
-namespace StockApp.WebApi.Controllers
+namespace Restaurant.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

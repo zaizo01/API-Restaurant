@@ -1,16 +1,16 @@
 ﻿using AutoMapper;
-using StockApp.Core.Application.Interfaces.Repositories;
-using StockApp.Core.Application.Interfaces.Services;
-using StockApp.Core.Application.ViewModels.Orders;
-using StockApp.Core.Application.ViewModels.Tables;
-using StockApp.Core.Domain.Entities;
+using Restaurant.Core.Application.Interfaces.Repositories;
+using Restaurant.Core.Application.Interfaces.Services;
+using Restaurant.Core.Application.ViewModels.Orders;
+using Restaurant.Core.Application.ViewModels.Tables;
+using Restaurant.Core.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StockApp.Core.Application.Services
+namespace Restaurant.Core.Application.Services
 {
     public class TableService : GenericService<SaveTableViewModel, TableViewModel, Table>, ITableService
     {

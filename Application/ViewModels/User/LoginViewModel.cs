@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace StockApp.Core.Application.ViewModels.User
+namespace Restaurant.Core.Application.ViewModels.User
 {
     public class LoginViewModel
     {
