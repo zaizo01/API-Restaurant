@@ -8,7 +8,7 @@ namespace StockApp.WebApi.Controllers.v1
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
-    [Authorize(Policy = "RequireAdminAndWaiterOnly")]
+    
     public class TableController : ControllerBase
     {
 
@@ -19,7 +19,8 @@ namespace StockApp.WebApi.Controllers.v1
             _TableService = TableService;
         }
 
-        
+
+        [Authorize(Policy = "RequireAdminAndWaiterOnly")]
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(TableViewModel))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -43,7 +44,7 @@ namespace StockApp.WebApi.Controllers.v1
             }
         }
 
-        
+        [Authorize(Policy = "RequireAdminAndWaiterOnly")]
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(SaveTableViewModel))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -67,7 +68,7 @@ namespace StockApp.WebApi.Controllers.v1
             }
         }
 
-       
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -90,8 +91,8 @@ namespace StockApp.WebApi.Controllers.v1
             }
         }
 
-        
-        
+
+        [Authorize(Roles = "Waiter")]
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -116,7 +117,7 @@ namespace StockApp.WebApi.Controllers.v1
             }
         }
 
-       
+        [Authorize(Roles = "Waiter")]
         [HttpPut]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -139,7 +140,7 @@ namespace StockApp.WebApi.Controllers.v1
             }
         }
 
-        
+        [Authorize(Roles = "Admin")]
         [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(UpdateTableViewModel))]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
