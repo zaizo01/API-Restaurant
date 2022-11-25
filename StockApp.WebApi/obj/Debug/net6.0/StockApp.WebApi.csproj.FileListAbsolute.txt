@@ -1162,3 +1162,4 @@ C:\Users\zaiz\Desktop\InternetBaking\API-Restaurant\StockApp.WebApi\obj\Debug\ne
 C:\Users\zaiz\Desktop\InternetBaking\API-Restaurant\StockApp.WebApi\obj\Debug\net6.0\StockApp.WebApi.genruntimeconfig.cache
 C:\Users\zaiz\Desktop\InternetBaking\API-Restaurant\StockApp.WebApi\obj\Debug\net6.0\ref\StockApp.WebApi.dll
 C:\Users\zaiz\Desktop\InternetBaking\API-Restaurant\StockApp.WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\czaiz\Desktop\Projects\Me\API-Restaurant\StockApp.WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

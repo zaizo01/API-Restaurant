@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zaiz\\Desktop\\InternetBaking\\API-Restaurant\\StockApp.Infrastructure.Shared\\StockApp.Infrastructure.Shared.csproj": {}
+    "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastructure.Shared\\StockApp.Infrastructure.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zaiz\\Desktop\\InternetBaking\\API-Restaurant\\Application\\StockApp.Core.Application.csproj": {
+    "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\Application\\StockApp.Core.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zaiz\\Desktop\\InternetBaking\\API-Restaurant\\Application\\StockApp.Core.Application.csproj",
+        "projectUniqueName": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\Application\\StockApp.Core.Application.csproj",
         "projectName": "StockApp.Core.Application",
-        "projectPath": "C:\\Users\\zaiz\\Desktop\\InternetBaking\\API-Restaurant\\Application\\StockApp.Core.Application.csproj",
-        "packagesPath": "C:\\Users\\zaiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zaiz\\Desktop\\InternetBaking\\API-Restaurant\\Application\\obj\\",
+        "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\Application\\StockApp.Core.Application.csproj",
+        "packagesPath": "C:\\Users\\czaiz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\zaiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\czaiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\zaiz\\Desktop\\InternetBaking\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj": {
-                "projectPath": "C:\\Users\\zaiz\\Desktop\\InternetBaking\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj"
+              "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj": {
+                "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj"
               }
             }
           }
@@ -104,25 +100,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\zaiz\\Desktop\\InternetBaking\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj": {
+    "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zaiz\\Desktop\\InternetBaking\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj",
         "projectName": "StockApp.Core.Domain",
-        "projectPath": "C:\\Users\\zaiz\\Desktop\\InternetBaking\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj",
-        "packagesPath": "C:\\Users\\zaiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zaiz\\Desktop\\InternetBaking\\API-Restaurant\\StockApp.Core.Domain\\obj\\",
+        "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj",
+        "packagesPath": "C:\\Users\\czaiz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Core.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\zaiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\czaiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -162,25 +154,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\zaiz\\Desktop\\InternetBaking\\API-Restaurant\\StockApp.Infrastructure.Shared\\StockApp.Infrastructure.Shared.csproj": {
+    "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastructure.Shared\\StockApp.Infrastructure.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zaiz\\Desktop\\InternetBaking\\API-Restaurant\\StockApp.Infrastructure.Shared\\StockApp.Infrastructure.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastructure.Shared\\StockApp.Infrastructure.Shared.csproj",
         "projectName": "StockApp.Infrastructure.Shared",
-        "projectPath": "C:\\Users\\zaiz\\Desktop\\InternetBaking\\API-Restaurant\\StockApp.Infrastructure.Shared\\StockApp.Infrastructure.Shared.csproj",
-        "packagesPath": "C:\\Users\\zaiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zaiz\\Desktop\\InternetBaking\\API-Restaurant\\StockApp.Infrastructure.Shared\\obj\\",
+        "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastructure.Shared\\StockApp.Infrastructure.Shared.csproj",
+        "packagesPath": "C:\\Users\\czaiz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Infrastructure.Shared\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\zaiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\czaiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -194,11 +182,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\zaiz\\Desktop\\InternetBaking\\API-Restaurant\\Application\\StockApp.Core.Application.csproj": {
-                "projectPath": "C:\\Users\\zaiz\\Desktop\\InternetBaking\\API-Restaurant\\Application\\StockApp.Core.Application.csproj"
+              "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\Application\\StockApp.Core.Application.csproj": {
+                "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\Application\\StockApp.Core.Application.csproj"
               },
-              "C:\\Users\\zaiz\\Desktop\\InternetBaking\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj": {
-                "projectPath": "C:\\Users\\zaiz\\Desktop\\InternetBaking\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj"
+              "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj": {
+                "projectPath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj"
               }
             }
           }
@@ -241,7 +229,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

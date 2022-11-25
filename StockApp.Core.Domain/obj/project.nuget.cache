@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+TBUXdRyL572Xck1sdQLo+p8Gc8/bJpDeO5zx6ubh5Sp6LzSV0jWX/hBo8TdcLiQ2si7JmOv3XO7oor/h1Ewmg==",
+  "dgSpecHash": "06nehyru+MuSH3PA5RxlImxS8C2iVxbqiWELVk6xsL8oYoh40B+C5LYfQgc+CU+UUobp6x51iaTrULXY8EX5ZA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zaiz\\Desktop\\InternetBaking\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj",
+  "projectFilePath": "C:\\Users\\czaiz\\Desktop\\Projects\\Me\\API-Restaurant\\StockApp.Core.Domain\\StockApp.Core.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

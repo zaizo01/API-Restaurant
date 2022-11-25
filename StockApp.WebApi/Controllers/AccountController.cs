@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using StockApp.Core.Application.Dtos.Account;
+using StockApp.Core.Application.Enums;
 using StockApp.Core.Application.Interfaces.Services;
+using StockApp.Core.Application.ViewModels.User;
 
 namespace StockApp.WebApi.Controllers
 {
@@ -22,32 +24,20 @@ namespace StockApp.WebApi.Controllers
             return Ok(await _accountService.AuthenticateAsync(request));
         }
 
-        [HttpPost("RegisterUser")]
-        public async Task<IActionResult> RegisterAsync(RegisterRequest request)
+        [HttpPost("RegisterAdminUser")]
+        public async Task<IActionResult> RegisterAdminAsync(RegisterRequest request)
         {
             var origin = Request.Headers["origin"];
-            return Ok(await _accountService.RegisterBasicUserAsync(request, origin));
+            return Ok(await _accountService.RegisterUserAsync(request, origin, Roles.Admin));
         }
 
-        [HttpGet("ConfirmAccountUser")]
-        public async Task<IActionResult> RegisterAsync([FromQuery] string userId, [FromQuery] string token)
-        {
-            return Ok(await _accountService.ConfirmAccountAsync(userId, token));
-        }
-
-
-        [HttpPost("ForgotPasswordUser")]
-        public async Task<IActionResult> ForgotPasswordAsync(ForgotPasswordRequest request)
+        [HttpPost("RegisterWaiterUser")]
+        public async Task<IActionResult> RegisterWaiterAsync(RegisterRequest request)
         {
             var origin = Request.Headers["origin"];
-            return Ok(await _accountService.ForgotPasswordAsync(request, origin));
+            return Ok(await _accountService.RegisterUserAsync(request, origin, Roles.Waiter));
         }
 
-        [HttpPost("ResetPasswordUser")]
-        public async Task<IActionResult> ResetPasswordAsync(ResetPasswordRequest request)
-        {
-            return Ok(await _accountService.ResetPasswordAsync(request));
-        }
     }
 }
 

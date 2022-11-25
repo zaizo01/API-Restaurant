@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using StockApp.Core.Application.Interfaces.Services;
 using StockApp.Core.Application.ViewModels.Tables;
@@ -7,6 +8,7 @@ namespace StockApp.WebApi.Controllers.v1
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
+    [Authorize(Policy = "RequireAdminAndWaiterOnly")]
     public class TableController : ControllerBase
     {
 
@@ -17,6 +19,7 @@ namespace StockApp.WebApi.Controllers.v1
             _TableService = TableService;
         }
 
+        
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(TableViewModel))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -40,6 +43,7 @@ namespace StockApp.WebApi.Controllers.v1
             }
         }
 
+        
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(SaveTableViewModel))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -63,6 +67,7 @@ namespace StockApp.WebApi.Controllers.v1
             }
         }
 
+       
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -85,6 +90,7 @@ namespace StockApp.WebApi.Controllers.v1
             }
         }
 
+        
         
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
@@ -110,6 +116,7 @@ namespace StockApp.WebApi.Controllers.v1
             }
         }
 
+       
         [HttpPut]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -132,7 +139,7 @@ namespace StockApp.WebApi.Controllers.v1
             }
         }
 
-
+        
         [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(UpdateTableViewModel))]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]

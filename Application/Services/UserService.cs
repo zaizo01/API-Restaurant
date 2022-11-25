@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using StockApp.Core.Application.Dtos.Account;
 using StockApp.Core.Application.DTOs.Email;
+using StockApp.Core.Application.Enums;
 using StockApp.Core.Application.Interfaces.Repositories;
 using StockApp.Core.Application.Interfaces.Services;
 using StockApp.Core.Application.ViewModels.User;
@@ -28,32 +29,12 @@ namespace StockApp.Core.Application.Services
             AuthenticationResponse userResponse = await _accountService.AuthenticateAsync(loginRequest);
             return userResponse;
         }
-        public async Task SignOutAsync()
-        {
-            await _accountService.SignOutAsync();
-        }
 
-        public async Task<RegisterResponse> RegisterAsync(SaveUserViewModel vm, string origin)
+
+        public async Task<RegisterResponse> RegisterAsync(SaveUserViewModel vm, string origin, Roles typeOfUser)
         {
             RegisterRequest registerRequest = _mapper.Map<RegisterRequest>(vm);
-            return await _accountService.RegisterBasicUserAsync(registerRequest, origin);
-        }
-
-        public async Task<string> ConfirmEmailAsync(string userId, string token)
-        {
-            return await _accountService.ConfirmAccountAsync(userId, token);
-        }
-
-        public async Task<ForgotPasswordResponse> ForgotPasswordAsync(ForgotPasswordViewModel vm, string origin)
-        {
-            ForgotPasswordRequest forgotRequest = _mapper.Map<ForgotPasswordRequest>(vm);
-            return await _accountService.ForgotPasswordAsync(forgotRequest, origin);
-        }
-
-        public async Task<ResetPasswordResponse> ResetPasswordAsync(ResetPasswordViewModel vm)
-        {
-            ResetPasswordRequest resetRequest = _mapper.Map<ResetPasswordRequest>(vm);
-            return await _accountService.ResetPasswordAsync(resetRequest);
+            return await _accountService.RegisterUserAsync(registerRequest, origin, typeOfUser);
         }
     }
 }

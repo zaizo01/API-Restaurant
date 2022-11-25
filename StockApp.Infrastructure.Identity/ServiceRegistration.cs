@@ -98,9 +98,7 @@ namespace StockApp.Infrastructure.Identity
             });
             #endregion
 
-            #region Services
             services.AddTransient<IAccountService, AccountService>();
-            #endregion
         }
     }
 }

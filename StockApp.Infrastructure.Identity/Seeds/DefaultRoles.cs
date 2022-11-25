@@ -15,7 +15,7 @@ namespace StockApp.Infrastructure.Identity.Seeds
         {
             await roleManager.CreateAsync(new IdentityRole(Roles.SuperAdmin.ToString()));
             await roleManager.CreateAsync(new IdentityRole(Roles.Admin.ToString()));
-            await roleManager.CreateAsync(new IdentityRole(Roles.Basic.ToString()));
+            await roleManager.CreateAsync(new IdentityRole(Roles.Waiter.ToString()));
         }
     }
 }

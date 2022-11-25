@@ -10,6 +10,6 @@ namespace StockApp.Core.Application.Enums
     {
         SuperAdmin,
         Admin,
-        Basic
+        Waiter
     }
 }
