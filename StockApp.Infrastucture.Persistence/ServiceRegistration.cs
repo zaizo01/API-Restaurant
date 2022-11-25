@@ -33,9 +33,7 @@ namespace StockApp.Infrastructure.Persistence
             #endregion
 
             #region Repositories
-            services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-            services.AddTransient<IProductRepository, ProductRepository>();
-            services.AddTransient<ICategoryRepository, CategoryRepository>();  
+            services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>)); 
             services.AddTransient<IDishRepository, DishRepository>();  
             services.AddTransient<IDishIngredientRepository, DishIngredientRepository>();  
             services.AddTransient<IOrderRepository, OrderRepository>();  

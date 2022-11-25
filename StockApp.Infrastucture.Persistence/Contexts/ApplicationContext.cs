@@ -14,8 +14,6 @@ namespace StockApp.Infrastructure.Persistence.Contexts
     {
         public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options) { }
 
-        public DbSet<Product> Products { get; set; }
-        public DbSet<Category> Categories { get; set; }   
         public DbSet<Order> Orders { get; set; }   
         public DbSet<Table> Tables { get; set; }   
         public DbSet<Dish> Dishs { get; set; }   
@@ -77,68 +75,6 @@ namespace StockApp.Infrastructure.Persistence.Contexts
                    .HasForeignKey(t => t.DishId)
                    .OnDelete(DeleteBehavior.NoAction);
 
-            #region tables
-
-            modelBuilder.Entity<Product>()
-                .ToTable("Products");
-
-            modelBuilder.Entity<Category>()
-                .ToTable("Categories");
-
-       
-
-            #endregion
-
-            #region "primary keys"
-            modelBuilder.Entity<Product>()
-                .HasKey(product => product.Id);
-
-            modelBuilder.Entity<Category>()
-                .HasKey(category => category.Id);
-
-            #endregion
-
-            #region "Relationships"
-            modelBuilder.Entity<Category>()
-                .HasMany<Product>(category => category.Products)
-                .WithOne(product => product.Category)
-                .HasForeignKey(product => product.CategoryId)
-                .OnDelete(DeleteBehavior.Cascade);
-
-
-            #endregion
-
-           // modelBuilder.Entity<Order>()
-           //.HasOne(p => p.Dishes)
-           //.WithMany().OnDelete(DeleteBehavior.NoAction);
-
-           // modelBuilder.Entity<Order>()
-           //.HasOne(p => p.Table)
-           //.WithMany().OnDelete(DeleteBehavior.NoAction);
-
-
-            #region "Property configurations"
-
-            #region products
-
-            modelBuilder.Entity<Product>().
-                Property(product => product.Name)
-                .IsRequired();
-
-            modelBuilder.Entity<Product>().
-               Property(product => product.Price)
-               .IsRequired();
-
-            #endregion
-
-            #region categories
-            modelBuilder.Entity<Category>().
-              Property(category => category.Name)
-              .IsRequired()
-              .HasMaxLength(100);
-            #endregion       
-
-            #endregion
 
         }
 

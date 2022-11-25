@@ -22,27 +22,6 @@ namespace StockApp.Core.Application.Mappings
     {
         public GeneralProfile()
         {
-            #region ProductProfile
-
-            CreateMap<Product, ProductViewModel>()
-                .ForMember(x=> x.CategoryName,opt=> opt.Ignore())
-                .ReverseMap()
-                .ForMember(x => x.Created, opt => opt.Ignore())
-                .ForMember(x => x.CreatedBy, opt => opt.Ignore())
-                .ForMember(x => x.LastModified, opt => opt.Ignore())
-                .ForMember(x => x.LastModifiedBy, opt => opt.Ignore());
-
-            CreateMap<Product, SaveProductViewModel>()
-            .ForMember(x => x.File, opt => opt.Ignore())
-            .ForMember(x => x.Categories, opt => opt.Ignore())
-            .ReverseMap()
-            .ForMember(x => x.Created, opt => opt.Ignore())
-            .ForMember(x => x.CreatedBy, opt => opt.Ignore())
-            .ForMember(x => x.LastModified, opt => opt.Ignore())
-            .ForMember(x => x.LastModifiedBy, opt => opt.Ignore())           
-            .ForMember(x => x.Category, opt => opt.Ignore());
-
-            #endregion
 
             #region TableProfile
 
@@ -154,24 +133,6 @@ namespace StockApp.Core.Application.Mappings
 
             CreateMap<OrderTableDish, SaveOrderTableDishViewModel>()
                 .ReverseMap();
-            #endregion
-
-            #region CategoryProfile
-            CreateMap<Category, CategoryViewModel>()
-            .ForMember(x => x.ProductsQuantity, opt => opt.Ignore())
-            .ReverseMap()
-            .ForMember(x => x.Created, opt => opt.Ignore())
-            .ForMember(x => x.CreatedBy, opt => opt.Ignore())
-            .ForMember(x => x.LastModified, opt => opt.Ignore())
-            .ForMember(x => x.LastModifiedBy, opt => opt.Ignore());
-
-            CreateMap<Category, SaveCategoryViewModel>()          
-            .ReverseMap()
-            .ForMember(x => x.Created, opt => opt.Ignore())
-            .ForMember(x => x.CreatedBy, opt => opt.Ignore())
-            .ForMember(x => x.LastModified, opt => opt.Ignore())
-            .ForMember(x => x.LastModifiedBy, opt => opt.Ignore())
-            .ForMember(x => x.Products, opt => opt.Ignore());
             #endregion
 
             #region UserProfile

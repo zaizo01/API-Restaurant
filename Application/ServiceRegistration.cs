@@ -16,8 +16,6 @@ namespace StockApp.Core.Application
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             #region Services
             services.AddTransient(typeof(IGenericService<,,>), typeof(GenericService<,,>));
-            services.AddTransient<IProductService, ProductService>();
-            services.AddTransient<ICategoryService, CategoryService>();
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IDishService, DishService>();
             services.AddTransient<IIngredientService, IngredientService>();
